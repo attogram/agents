@@ -22,7 +22,15 @@ The goal is to leverage AI assistance effectively for development tasks like deb
 
 This repository provides a set of templates to start from:
 
-*   [`AGENTS.md`](./AGENTS.md): A generic template suitable for any project. It provides a good starting point for customization.
-*   [`AGENTS.php.md`](./AGENTS.php.md): A template for general PHP projects, with guidelines for PHPUnit and PSR-12 standards.
-*   [`AGENTS.php.laravel.md`](./AGENTS.php.laravel.md): A template for Laravel projects, including instructions for Pest and Artisan commands.
-*   [`AGENTS.bash.bats.md`](./AGENTS.bash.bats.md): A template for Bash projects that use BATS for testing.
+- [`AGENTS.md`](./AGENTS.md): A generic template suitable for any project. It provides a good starting point for customization.
+- [`AGENTS.php.md`](./AGENTS.php.md): A template for general PHP projects, with guidelines for PHPUnit and PSR-12 standards.
+- [`AGENTS.php.laravel.md`](./AGENTS.php.laravel.md): A template for Laravel projects, including instructions for Pest and Artisan commands.
+- [`AGENTS.bash.bats.md`](./AGENTS.bash.bats.md): A template for Bash projects that use BATS for testing.
+
+---
+
+## Example Agent Profile
+
+In addition to templates, this repository also contains an example of a "filled-out" agent profile for an AI assistant named Jules. This file, `AGENTS.jules.md`, documents the specific tools and capabilities of that agent. It can serve as a reference for how an `AGENTS.md` file can be used to document an AI's development environment.
+
+- [`AGENTS.jules.md`](./AGENTS.jules.md): An example profile for the AI assistant, Jules.
