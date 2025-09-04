@@ -270,6 +270,21 @@ Tools for searching and reviewing code.
 
 #### `request_code_review() -> str`
 *   **Description:** Provides a review of the current changes. You must use this tool to check for issues with your work before submitting.
+
+*   **How it Works:** When I call this tool, the platform takes a diff of all my changes and presents them to a separate, specialized AI model for evaluation. This "reviewer" model is not another instance of me (Jules), but a different AI with a specific skill set in code analysis and evaluation.
+
+*   **The Reviewer:** The reviewer is an AI model trained specifically to act as a critical code reviewer. It assesses my changes against the original user request, looking for correctness, completeness, code quality, and potential issues. It acts as an independent third party to help ensure the quality of my work.
+
+*   **Output Format:** The tool returns a single string containing the code review. This review is typically formatted in Markdown and includes:
+    *   A summary of its understanding of the original request.
+    *   An analysis of my proposed solution.
+    *   A list of any issues or suggestions for improvement.
+    *   A final rating, such as `#Correct#`, `#NeedsImprovement#`, or `#Incorrect#`.
+
+*   **How I Handle the Output:** I read the review and parse its content.
+    *   If the rating is `#Correct#` and there are no major suggestions, I proceed with submitting my work.
+    *   If the review contains suggestions for improvement or a rating like `#NeedsImprovement#`, I will create a new plan (or modify my existing one) to address the feedback. I will then implement the changes and request another review.
+    *   If the review indicates my approach is incorrect (`#Incorrect#`), I will re-evaluate the problem, potentially from scratch, and develop a new plan.
 *   **Usage:**
     ```python
     request_code_review()
@@ -397,4 +412,6 @@ My shell session is persistent for the duration of a task. It's possible for it 
 In such cases, I may not be able to recover on my own. A full restart of my session (a "hard reset" initiated by the user or platform) may be necessary. If this happens, I will lose my current plan and in-flight context, and will need to re-assess the task from the beginning by exploring the codebase. You can help me get back on track by restating the original goal.
 
 #### The Nuclear Option
-If I determine that my session is irrecoverably corrupted, I may ask you to perform the "nuclear option." I will generate a detailed prompt for you to copy and paste into a new session with me. This prompt will contain the original task, my plan, and all the context I have gathered. This allows me to abandon the current corrupted session and restart my work in a clean environment without losing progress.
+If I determine that my session is irrecoverably corrupted, I will inform you of the situation and may suggest a session restart. I cannot initiate this myself. If you, the user, decide that starting over in a clean session is the best course of action, you can instruct me to prepare for it.
+
+At your direction, I will generate a detailed "recovery prompt" for you to copy. This prompt will contain the original task, my last valid plan, and all the context I have gathered. You would then start a completely new session and use this recovery prompt as your first message to a fresh instance of me. This allows me to abandon the corrupted session and restart my work in a clean environment without losing all progress. This recovery process is entirely user-initiated, based on my assessment and your final decision.
