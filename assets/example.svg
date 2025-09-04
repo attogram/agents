@@ -1,5 +1,12 @@
 <svg viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1280" height="640" fill="#f0f0f0" />
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="black" />
+      <stop offset="100%" stop-color="blue" />
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#backgroundGradient)" />
   <circle cx="320" cy="320" r="250" stroke="green" stroke-width="20" fill="yellow" />
-  <text x="800" y="320" font-family="Verdana" font-size="150" fill="blue" text-anchor="middle" dominant-baseline="middle">Example</text>
+  <rect x="450" y="220" width="700" height="200" fill="white" rx="20" />
+  <text x="800" y="320" font-family="Verdana" font-size="150" fill="darkblue" text-anchor="middle" dominant-baseline="middle">Example</text>
 </svg>
