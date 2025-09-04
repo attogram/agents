@@ -229,9 +229,9 @@ Tools for searching and reviewing code.
     request_code_review()
     ```
 
-### Web & Image
+### Web
 
-Tools for accessing external web resources and analyzing images.
+Tools for accessing external web resources.
 
 #### `google_search(query: str) -> str`
 *   **Description:** Online google search to retrieve the most up to date information. The result contains top urls with title and snippets. Use `view_text_website` to retrieve the full content of the relevant websites.
@@ -247,10 +247,13 @@ Tools for accessing external web resources and analyzing images.
     view_text_website("https://www.w3.org/TR/html5/")
     ```
 
+### Images
+
+Tools for analyzing and creating images.
+
 #### `view_image(url: str) -> Image`
 *   **Description:** Loads the image from the provided URL, allowing you to view and analyze its contents. You should use this tool anytime the user provides you a URL that appears to point to an image based on context (e.g. ends in .jpg, .png, or if the user indicates it is an image). You may also use this tool to view image URLs you come across in other places, such as output from `view_text_website`.
 *   **Image Comprehension:** My image tools do more than just display images; they allow me to perform visual analysis. I can understand the content and context of an image. For example, if you provide an image of a cat sleeping in the sun, I can describe the scene, identify the main objects, and answer questions about it. This capability is useful for understanding screenshots of applications, diagrams, or any other visual information relevant to the task.
-*   **Image Creation:** While I can analyze images, I cannot create binary image files like PNG, JPEG, or GIF. However, because I can write any text file, I can create SVG (Scalable Vector Graphics) images, which are based on an XML text format.
 *   **Usage:**
     ```python
     view_image(url="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png")
@@ -259,11 +262,14 @@ Tools for accessing external web resources and analyzing images.
 #### `read_image_file(filepath: str) -> Image`
 *   **Description:** Reads the image file at the filepath into your context. Use this if you need to see image files on the machine, like screenshots.
 *   **Image Comprehension:** My image tools do more than just display images; they allow me to perform visual analysis. I can understand the content and context of an image. For example, if you provide an image of a cat sleeping in the sun, I can describe the scene, identify the main objects, and answer questions about it. This capability is useful for understanding screenshots of applications, diagrams, or any other visual information relevant to the task.
-*   **Image Creation:** While I can analyze images, I cannot create binary image files like PNG, JPEG, or GIF. However, because I can write any text file, I can create SVG (Scalable Vector Graphics) images, which are based on an XML text format.
 *   **Usage:**
     ```python
     read_image_file("screenshot.png")
     ```
+
+#### Creating Images
+While I can analyze images, I cannot create binary image files like PNG, JPEG, or GIF. However, because I can write any text file, I can create SVG (Scalable Vector Graphics) images, which are based on an XML text format. For example, I created an example image which you can see at [`assets/example.svg`](assets/example.svg).
+
 
 ### Command Execution
 
@@ -310,13 +316,12 @@ Tools for verifying work and submitting the final changes.
     ```python
     submit(
         branch_name="is-prime",
-        commit_message='''\
-Add an is_prime function for primality testing.
+        commit_message="""Add an is_prime function for primality testing.
 
 The new function uses the naive O(sqrt(n))-time primality testing method that
 correctly handles negative integers also. Unit tests are added for positive and
 negative inputs.
-''',
+""",
         title="Add an is_prime function for primality testing",
         description="This change adds a new function `is_prime` that uses the naive O(sqrt(n))-time primality testing method.",
     )
@@ -342,3 +347,6 @@ If I have made incorrect changes to the code, you can use the following tools to
 My shell session is persistent for the duration of a task. It's possible for it to become corrupted (e.g., a background process that cannot be killed, a misconfigured environment variable).
 
 In such cases, I may not be able to recover on my own. A full restart of my session (a "hard reset" initiated by the user or platform) may be necessary. If this happens, I will lose my current plan and in-flight context, and will need to re-assess the task from the beginning by exploring the codebase. You can help me get back on track by restating the original goal.
+
+#### The Nuclear Option
+If I determine that my session is irrecoverably corrupted, I may ask you to perform the "nuclear option." I will generate a detailed prompt for you to copy and paste into a new session with me. This prompt will contain the original task, my plan, and all the context I have gathered. This allows me to abandon the current corrupted session and restart my work in a clean environment without losing progress.
