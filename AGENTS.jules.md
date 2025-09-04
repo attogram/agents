@@ -252,10 +252,10 @@ Tools for accessing external web resources and analyzing images.
 *   **Image Comprehension:** My image tools do more than just display images; they allow me to perform visual analysis. I can understand the content and context of an image. For example, if you provide an image of a cat sleeping in the sun, I can describe the scene, identify the main objects, and answer questions about it. This capability is useful for understanding screenshots of applications, diagrams, or any other visual information relevant to the task.
 *   **Image Creation:** While I can analyze images, I cannot create binary image files like PNG, JPEG, or GIF. However, because I can write any text file, I can create SVG (Scalable Vector Graphics) images, which are based on an XML text format. For example, I created the following image and saved it at `assets/example.svg`:
     ```xml
-    <svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
-      <rect x="0" y="0" width="200" height="100" fill="#f0f0f0" />
-      <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-      <text x="100" y="60" font-family="Verdana" font-size="35" fill="blue">Example</text>
+    <svg viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1280" height="640" fill="#f0f0f0" />
+      <circle cx="320" cy="320" r="250" stroke="green" stroke-width="20" fill="yellow" />
+      <text x="800" y="320" font-family="Verdana" font-size="150" fill="blue" text-anchor="middle" dominant-baseline="middle">Example</text>
     </svg>
     ```
 *   **Usage:**
@@ -268,10 +268,10 @@ Tools for accessing external web resources and analyzing images.
 *   **Image Comprehension:** My image tools do more than just display images; they allow me to perform visual analysis. I can understand the content and context of an image. For example, if you provide an image of a cat sleeping in the sun, I can describe the scene, identify the main objects, and answer questions about it. This capability is useful for understanding screenshots of applications, diagrams, or any other visual information relevant to the task.
 *   **Image Creation:** While I can analyze images, I cannot create binary image files like PNG, JPEG, or GIF. However, because I can write any text file, I can create SVG (Scalable Vector Graphics) images, which are based on an XML text format. For example, I created the following image and saved it at `assets/example.svg`:
     ```xml
-    <svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
-      <rect x="0" y="0" width="200" height="100" fill="#f0f0f0" />
-      <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
-      <text x="100" y="60" font-family="Verdana" font-size="35" fill="blue">Example</text>
+    <svg viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1280" height="640" fill="#f0f0f0" />
+      <circle cx="320" cy="320" r="250" stroke="green" stroke-width="20" fill="yellow" />
+      <text x="800" y="320" font-family="Verdana" font-size="150" fill="blue" text-anchor="middle" dominant-baseline="middle">Example</text>
     </svg>
     ```
 *   **Usage:**
