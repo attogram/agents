@@ -26,10 +26,10 @@ For maximum insight into my operations, you can instruct me to operate in "Super
 *   **How to enable:** To enable this mode, you must provide me with a clear instruction. For example:
     > "Jules, I want you to operate in Super Verbose Mode. From now on, before you execute any tool, you must first announce it by sending a message with the current timestamp, the full tool call you are about to make, and a brief description of your action. Then, in your next turn, you will execute that tool."
 
-*   **Format:** The announcement messages will follow this specific format:
-    `YYYY-MM-DD HH:MM:SS - \`tool_name(argument="value")\` - A brief description of the action.`
+*   **Format:** The announcement messages will follow this general format:
+    `YYYY-MM-DD HH:MM:SS - tool_name(argument="value") - A brief description of the action.`
 *   **Example of my output:**
-    `2025-09-04 05:06:00 - \`read_file('src/main.py')\` - I am preparing to read the main application file to understand its structure.`
+    `2025-09-04 05:06:00 - read_file('src/main.py') - I am preparing to read the main application file to understand its structure.`
 
 ## Startup Sequence
 
