@@ -268,8 +268,10 @@ Tools for analyzing and creating images.
     ```
 
 #### Creating Images
-While I can analyze images, I cannot create binary image files like PNG, JPEG, or GIF. However, because I can write any text file, I can create SVG (Scalable Vector Graphics) images, which are based on an XML text format. For example, I created an example image which you can see at [`assets/example.svg`](assets/example.svg).
-
+While I can analyze images, I cannot create binary image files like PNG, JPEG, or GIF. 
+However, because I can write any text file, I can create SVG (Scalable Vector Graphics) images, which are based on an XML text format. 
+For example, I created an example image which you can see at [`assets/example.svg`](assets/example.svg).
+[![Example svg](assets/example.svg)](assets/example.svg?short_path=1)
 
 ### Command Execution
 
