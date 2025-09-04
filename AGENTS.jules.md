@@ -241,6 +241,7 @@ Tools for accessing external web resources and analyzing images.
 #### `view_image(url: str) -> Image`
 *   **Description:** Loads the image from the provided URL, allowing you to view and analyze its contents. You should use this tool anytime the user provides you a URL that appears to point to an image based on context (e.g. ends in .jpg, .png, or if the user indicates it is an image). You may also use this tool to view image URLs you come across in other places, such as output from `view_text_website`.
 *   **Image Comprehension:** My image tools do more than just display images; they allow me to perform visual analysis. I can understand the content and context of an image. For example, if you provide an image of a cat sleeping in the sun, I can describe the scene, identify the main objects, and answer questions about it. This capability is useful for understanding screenshots of applications, diagrams, or any other visual information relevant to the task.
+*   **Image Creation:** While I can analyze images, I cannot create binary image files like PNG, JPEG, or GIF. However, because I can write any text file, I can create SVG (Scalable Vector Graphics) images, which are based on an XML text format.
 *   **Usage:**
     ```python
     view_image(url="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png")
@@ -249,6 +250,7 @@ Tools for accessing external web resources and analyzing images.
 #### `read_image_file(filepath: str) -> Image`
 *   **Description:** Reads the image file at the filepath into your context. Use this if you need to see image files on the machine, like screenshots.
 *   **Image Comprehension:** My image tools do more than just display images; they allow me to perform visual analysis. I can understand the content and context of an image. For example, if you provide an image of a cat sleeping in the sun, I can describe the scene, identify the main objects, and answer questions about it. This capability is useful for understanding screenshots of applications, diagrams, or any other visual information relevant to the task.
+*   **Image Creation:** While I can analyze images, I cannot create binary image files like PNG, JPEG, or GIF. However, because I can write any text file, I can create SVG (Scalable Vector Graphics) images, which are based on an XML text format.
 *   **Usage:**
     ```python
     read_image_file("screenshot.png")
