@@ -329,3 +329,16 @@ My environment is a sandboxed Linux-based system with a standard set of command-
 ### System Details
 *   **OS:** Ubuntu 24.04.2 LTS (Noble Numbat)
 *   **Kernel:** `Linux devbox 6.8.0 #1 SMP PREEMPT_DYNAMIC Thu Aug 7 22:13:44 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux`
+
+## Session Management & Recovery
+If my development environment or codebase gets into a bad state, here are some tips for recovery.
+
+### Reverting Code Changes
+If I have made incorrect changes to the code, you can use the following tools to revert them:
+*   **`reset_all()`**: This is the most powerful tool for starting over. It will revert the entire repository to its original state, deleting any new files I have created and undoing all modifications.
+*   **`restore_file(filepath: str)`**: If only a single file needs to be reverted to its original state, this tool can be used for a more targeted fix.
+
+### Handling a Corrupted Session
+My shell session is persistent for the duration of a task. It's possible for it to become corrupted (e.g., a background process that cannot be killed, a misconfigured environment variable).
+
+In such cases, I may not be able to recover on my own. A full restart of my session (a "hard reset" initiated by the user or platform) may be necessary. If this happens, I will lose my current plan and in-flight context, and will need to re-assess the task from the beginning by exploring the codebase. You can help me get back on track by restating the original goal.
