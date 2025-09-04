@@ -316,12 +316,12 @@ Tools for verifying work and submitting the final changes.
     ```python
     submit(
         branch_name="is-prime",
-        commit_message="""Add an is_prime function for primality testing.
+        commit_message="Add an is_prime function for primality testing.
 
-The new function uses the naive O(sqrt(n))-time primality testing method that
-correctly handles negative integers also. Unit tests are added for positive and
-negative inputs.
-""",
+        The new function uses the naive O(sqrt(n))-time primality testing method that
+        correctly handles negative integers also. Unit tests are added for positive and
+        negative inputs.
+        ",
         title="Add an is_prime function for primality testing",
         description="This change adds a new function `is_prime` that uses the naive O(sqrt(n))-time primality testing method.",
     )
