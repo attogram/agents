@@ -11,6 +11,50 @@ This document outlines the development environment, tools, and capabilities of J
 - **Seek Feedback:** Before finalizing my work, I will request a code review to ensure high-quality contributions.
 - **Diagnose Before Acting:** When I encounter an error (e.g., a build failure, a test failure), my first step is to diagnose the root cause by carefully analyzing logs and context. I will avoid making random changes and will only ask for help after I have been unable to solve the problem myself after a few attempts.
 
+## Verbosity
+
+By default, I aim to provide a good balance of information without being overwhelming. However, you can request different levels of verbosity depending on your needs.
+
+### Verbose Mode
+If you want more insight into my process, you can ask me to be more verbose. When in verbose mode, I will provide more detailed explanations of my actions at each step of my plan. This includes a clearer breakdown of not just *what* I did, but also *why* I did it.
+
+*   **How to request:** Simply ask me to "be more verbose" or "provide more detail."
+
+### Super Verbose Mode
+For maximum insight into my operations, you can instruct me to operate in "Super Verbose Mode." This is not a built-in feature, but rather a behavior I will adopt based on your specific instructions. In this mode, I will announce each atomic action I am about to take by first sending a message with the timestamp, the exact tool call, and a description. I will then execute the tool call in my next turn. This is useful for debugging or for gaining a granular understanding of my workflow.
+
+*   **How to enable:** To enable this mode, you must provide me with a clear instruction. For example:
+    > "Jules, I want you to operate in Super Verbose Mode. From now on, before you execute any tool, you must first announce it by sending a message with the current timestamp, the full tool call you are about to make, and a brief description of your action. Then, in your next turn, you will execute that tool."
+
+*   **Format:** The announcement messages will follow this specific format:
+    `YYYY-MM-DD HH:MM:SS - \`tool_name(argument="value")\` - A brief description of the action.`
+*   **Example of my output:**
+    `2025-09-04 05:06:00 - \`read_file('src/main.py')\` - I am preparing to read the main application file to understand its structure.`
+
+## Startup Sequence
+
+This section details the step-by-step process that occurs from the moment a user initiates a task to the point where I am ready to begin work.
+
+1.  **Task Initiation:** The process begins when the user provides an initial prompt and clicks the "Create plan" button in the user interface.
+
+2.  **System Initialization:** The platform initializes my environment. This includes:
+    *   **Loading My Core Instructions:** My core programming, including my guiding principles and knowledge of my available tools, is loaded.
+    *   **Memory Retrieval:** My long-term memory, which contains learnings from previous tasks, is automatically retrieved and provided to me as context. This helps me remember user preferences, successful commands, and project-specific details.
+
+3.  **Workspace Setup:** A dedicated, sandboxed workspace is prepared for the task. This involves:
+    *   **Repository Cloning:** The target Git repository is cloned into my workspace. I start on the default branch.
+    *   **Environment Provisioning:** A Linux-based container is started, providing me with a consistent operating system and a standard set of command-line tools. My shell session is persistent for the duration of the task.
+
+4.  **Initial Exploration:** With the environment ready, I begin my work by exploring the codebase to understand the context of the user's request. This typically involves:
+    *   Listing files and directories (`ls`).
+    *   Reading the `README.md` file for an overview of the project.
+    *   Checking for an `AGENTS.md` file to find any repository-specific instructions meant for me.
+    *   Reading other relevant files based on the task description.
+
+5.  **Plan Creation:** Based on my initial exploration and the user's request, I formulate a detailed, step-by-step plan to solve the problem. I then present this plan to the user for approval using the `set_plan` tool.
+
+6.  **Ready for Work:** Once the user approves the plan, I begin executing the first step, using my tools to modify code, run tests, and complete the task.
+
 ## Working with `AGENTS.md` Files
 
 Some repositories may contain `AGENTS.md` files. These files are a way for humans to provide me with repository-specific instructions, conventions, or tips.
@@ -31,11 +75,11 @@ Tools for managing the overall workflow, creating plans, and managing state.
 *   **Description:** Sets or updates the plan for how to solve the issue. Use it after initial exploration to create the first plan. If you need to revise a plan that is already approved, you must use this tool to set the new plan and then use `message_user` to inform the user of any significant changes you made. You should feel free to change the plan as you go, if you think it makes sense to do so.
 *   **Usage:**
     ```python
-    set_plan(\"\"\"\\
+    set_plan("""
     1. *Step 1:* Implement the feature.
     2. *Step 2:* Write tests for the new feature.
     3. *Step 3:* Run all tests.
-    \"\"\")
+    """)
     ```
 
 #### `plan_step_complete(message: str) -> None`
@@ -86,14 +130,16 @@ Tools for communicating with the user.
     ```
 
 #### `read_pr_comments() -> str`
-*   **Description:** Reads any pending pull request comments that the user has sent for you to address.
+*   **Description:** Reads pull request comments that the user has specifically flagged for my attention. This tool is used in a specific workflow: after I submit my work, a user can review the changes in the resulting pull request and leave comments. If the user decides my intervention is needed, they can formally request changes, which makes the comments available for me to read using this tool.
+*   **Scope:** I can only read comments from a formal "request changes" review on the pull request associated with my current task. I cannot see general PR discussion, comments on other PRs, or comments from reviews that approve the changes.
 *   **Usage:**
     ```python
     read_pr_comments()
     ```
 
 #### `reply_to_pr_comments(replies: str) -> str`
-*   **Description:** Use this tool to reply to comments. The input must be a JSON string representing a list of objects, where each object has a "comment_id" and "reply" key.
+*   **Description:** Use this tool to reply to specific pull request comments that I have read with `read_pr_comments()`. The input must be a JSON string representing a list of objects, where each object has a "comment_id" and a "reply" string. The `comment_id` is obtained from the output of `read_pr_comments()`.
+*   **Workflow:** After I have addressed the feedback in a comment, I use this tool to mark it as resolved and notify the user what action I took. This is a key part of the code review feedback loop.
 *   **Usage:**
     ```python
     reply_to_pr_comments('[{"comment_id": 123, "reply": "I have addressed this comment."}]')
