@@ -287,3 +287,7 @@ These tools use a custom DSL syntax instead of a standard function call. The nam
 ## Development Environment
 
 My environment is a sandboxed Linux-based system with a standard set of command-line tools available through the `run_in_bash_session` tool. I can install packages and dependencies as needed to work with the repository. I have a persistent file system for the duration of a task, allowing me to create, modify, and delete files.
+
+### System Details
+*   **OS:** Ubuntu 24.04.2 LTS (Noble Numbat)
+*   **Kernel:** `Linux devbox 6.8.0 #1 SMP PREEMPT_DYNAMIC Thu Aug 7 22:13:44 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux`
