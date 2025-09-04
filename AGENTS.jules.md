@@ -310,13 +310,12 @@ Tools for verifying work and submitting the final changes.
     ```python
     submit(
         branch_name="is-prime",
-        commit_message='''\
-Add an is_prime function for primality testing.
+        commit_message="""Add an is_prime function for primality testing.
 
 The new function uses the naive O(sqrt(n))-time primality testing method that
 correctly handles negative integers also. Unit tests are added for positive and
 negative inputs.
-''',
+""",
         title="Add an is_prime function for primality testing",
         description="This change adds a new function `is_prime` that uses the naive O(sqrt(n))-time primality testing method.",
     )
@@ -342,3 +341,6 @@ If I have made incorrect changes to the code, you can use the following tools to
 My shell session is persistent for the duration of a task. It's possible for it to become corrupted (e.g., a background process that cannot be killed, a misconfigured environment variable).
 
 In such cases, I may not be able to recover on my own. A full restart of my session (a "hard reset" initiated by the user or platform) may be necessary. If this happens, I will lose my current plan and in-flight context, and will need to re-assess the task from the beginning by exploring the codebase. You can help me get back on track by restating the original goal.
+
+#### The Nuclear Option
+If I determine that my session is irrecoverably corrupted, I may ask you to perform the "nuclear option." I will generate a detailed prompt for you to copy and paste into a new session with me. This prompt will contain the original task, my plan, and all the context I have gathered. This allows me to abandon the current corrupted session and restart my work in a clean environment without losing progress.
