@@ -4,7 +4,7 @@
 
 `HUMANS` files for you
 
-Helping you standardize your AI collaboration process
+Standardize your AI collaboration process
 
 ## For AI assistants
 - [./AGENTS.md](./AGENTS.md) - base instructions for all AI Assistants
