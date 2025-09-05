@@ -16,7 +16,7 @@ This repository uses a specific structure to organize instructions. You must fam
 
 ### Master Documents
 
-- **`../AGENTS.md`**: The master template for AI agent instructions.
+- **`../AGENTS.md`**: The master file for AI agent instructions.
 - **`../HUMANS.md`**: The master guide for humans collaborating with AI agents.
 
 ### Supporting Documents
