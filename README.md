@@ -20,6 +20,15 @@ Standardize your AI collaboration process.
 - [./humans/](./humans/) - directory for per-agent instructions
   - [./humans/HUMANS.jules.md](./humans/HUMANS.jules.md) - for working with the Google Jules agent
 
+## `AGENTS` and `HUMANS` files
+
+While `README.md` and `CONTRIBUTING.md` provide general information, AI-assisted workflows require specialized instructions.
+
+-   **`AGENTS` files** provide technical instructions for AI assistants.
+-   **`HUMANS` files** provide collaboration guidance for human developers.
+
+This separation of concerns ensures clear and targeted instructions for both audiences.
+
 ## Development
 
 We welcome contributions!
