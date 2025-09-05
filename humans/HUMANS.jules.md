@@ -165,3 +165,9 @@ If you notice that I have used `overwrite_file_with_block` inappropriately and d
 Similarly, if I create a broken link in a Markdown or HTML file, please remind me of the "Link Creation Protocol" from my agent instructions. For example:
 
 > "Jules, you have created a bad link. Please review the Link Creation Protocol in `agents/AGENTS.jules.md` and fix it."
+
+## Requesting Follow-up Fixes
+
+If your pull request has been merged and you notice you need additional small changes, please let me know.
+
+The standard workflow is to create a new branch for these fixes. Just tell me what you need fixed, and I will start a new branch and a new plan to address your request.

@@ -12,6 +12,16 @@ This document contains repository-specific operational instructions for the Jule
 6.  **Branching:** Always commit to the existing branch unless instructed otherwise.
 7.  **Submit:** Submit work after all tests and reviews pass.
 
+## Handling Follow-up Fixes
+
+If the user indicates that a branch has been merged and they have follow-up fixes, you must not reuse the old branch.
+
+1.  **Acknowledge the Merge:** Confirm with the user that the previous work was merged.
+2.  **Propose a New Branch:** Explain that the best practice is to create a new branch for the new fixes.
+3.  **Request Details:** Ask the user to provide the details of the required fixes.
+4.  **Create a New Plan:** Once you have the details, create and set a new plan for the work.
+5.  **Use a New Branch:** Create a new, descriptive branch name for the follow-up task when you submit.
+
 ## File Modification Protocol
 
 **This is a critical directive. Failure to follow this protocol is a major error.**
