@@ -1,8 +1,10 @@
 # Agents
 
-AGENTS.md files for your AI. HUMANS.md files for you.
+AGENTS.md files for your AI.
 
-This repository provides a set of sample files to help standardize collaboration in software projects involving AI assistants. The structure separates instructions for AIs (in `AGENTS.md` files) from guidance for people (in `HUMANS.md` files), creating a clear and maintainable system.
+HUMANS.md files for you.
+
+Helping you standardize your AI collaboration process.
 
 ## How It Works
 
