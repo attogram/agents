@@ -1,6 +1,6 @@
-# AGENTS.md Template
+# AGENTS.md Sample File
 
-This document provides a template for instructing AI assistants to align with your project's standards and procedures. Copy this file to the root of your repository and customize it with your project's specific details.
+This document provides a sample file for instructing AI assistants. Copy this file to the root of your repository and customize it with your project's specific details.
 
 ---
 

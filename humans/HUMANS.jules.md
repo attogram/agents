@@ -27,8 +27,8 @@ Jules has different modes of operation you can request.
 ### Standard Mode
 This is the default mode. Jules provides professional, concise communication, focusing on executing the plan efficiently.
 
-### SUPER verbose mode
-If you want to understand Jules's reasoning in extreme detail, you can ask it to enter "SUPER verbose mode". In this mode, it will explain its entire thinking process before every action it takes. This is useful for debugging or for a deeper insight into its decision-making process.
+### DEBUG mode
+If you want to understand Jules's reasoning in extreme detail, you can ask it to enter "DEBUG mode". In this mode, it will announce each action it is about to take and why. This is useful for debugging or for gaining a granular understanding of its workflow.
 
 ---
 
