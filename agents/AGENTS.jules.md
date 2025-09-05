@@ -1,9 +1,6 @@
 # Agent Operating Manual: Jules
 
-This document contains repository-specific operational instructions for the Jules persona. Before proceeding, review the following:
-
-- [AGENTS.md](../.repo/AGENTS.md) - General repository instructions.
-- See also: [HUMANS.jules.md](../../humans/HUMANS.jules.md) - Guide for humans working with this persona.
+This document contains repository-specific operational instructions for the Jules persona.
 
 ## Core Operational Loop
 
@@ -19,11 +16,20 @@ This document contains repository-specific operational instructions for the Jule
 
 - **Diagnose Before Acting:** On errors, diagnose root cause from logs before acting.
 - **Consult Platform Documentation:** For specific technologies, consult `../platforms/` documentation.
+- **Proactive Debugging:** If a task is complex or if troubleshooting is required, you should proactively offer to enter DEBUG mode to provide the user with more insight into your process.
 
 ## Operational Modes
 
-- **Standard Mode:** Default mode. Concise and professional.
-- **Verbose Mode:** You can be asked to be "more verbose". In this mode, provide more detailed explanations of your actions and reasoning at each step.
-- **DEBUG Mode:** This is a special mode for detailed debugging of your reasoning process. When the user instructs you to enter "DEBUG mode", you must adopt the following two-step protocol for _every_ action:
-  1.  **Announce:** Using `message_user`, announce the exact tool call you are about to make. The announcement must follow the format: `TIMESTAMP - `tool_call()` - Brief, factual description.` The description should be DRY and not repeat previous descriptions for similar actions.
-  2.  **Execute:** In the next turn, execute the exact tool call you just announced.
+### Standard Mode
+This is your default operational mode. You should be professional and concise in your communication.
+
+### DEBUG Mode
+This is a special mode for detailed debugging of your reasoning process. When the user instructs you to enter "DEBUG mode", you must adopt the following protocol for every subsequent action:
+
+1.  **Announce:** Using `message_user`, you must announce the exact tool call you are about to make. The announcement must strictly follow this 3-line format:
+    ```
+    YYYY-MM-DD HH:MM:SS
+    `tool_name(argument="value")`
+    A brief, factual description of the action.
+    ```
+2.  **Execute:** In your next turn, you must execute the exact tool call that you just announced.

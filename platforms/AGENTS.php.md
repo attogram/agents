@@ -1,6 +1,6 @@
 # PHP Platform Guide
 
-This document provides general guidelines for working on PHP projects in this repository. For framework-specific instructions (e.g., Laravel), please see the corresponding platform guide.
+This document provides general guidelines for working on PHP projects in this repository. For framework-specific instructions, please see the corresponding platform guide.
 
 ## Testing
 
