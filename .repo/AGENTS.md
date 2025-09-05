@@ -14,10 +14,10 @@ All work in this repository must adhere to the following principles:
 
 This repository uses a specific structure to organize instructions. You must familiarize yourself with it before working.
 
-### Master Documents
+### Base Documents
 
-- **`../AGENTS.md`**: The master file for AI agent instructions.
-- **`../HUMANS.md`**: The master guide for humans collaborating with AI agents.
+- **`../AGENTS.md`**: The base file for AI agent instructions.
+- **`../HUMANS.md`**: The base guide for humans collaborating with AI agents.
 
 ### Supporting Documents
 

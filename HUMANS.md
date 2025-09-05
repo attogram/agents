@@ -12,7 +12,7 @@ This document guides humans on how to effectively collaborate with AI agents in 
 
 AI agents are guided by instruction files.
 
-- **[AGENTS.md](./AGENTS.md):** The master instruction file for all AI agents. This file sets the technical standards for the AI's work.
+- **[AGENTS.md](./AGENTS.md):** The base instruction file for all AI agents. This file sets the technical standards for the AI's work.
 - **Persona Guides (`humans/`):** The `humans/` directory contains guides on how to work with specific AI agent personas.
   - [Working with Jules](humans/HUMANS.jules.md)
 
