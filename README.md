@@ -22,7 +22,7 @@ Standardize your AI collaboration process.
 
 ## `AGENTS` and `HUMANS` files
 
-While `README.md` and `CONTRIBUTING.md` provide general information, this project's AI-assisted workflow requires specialized instructions.
+While `README.md` and `CONTRIBUTING.md` provide general information, AI-assisted workflows require specialized instructions.
 
 -   **`AGENTS` files** provide technical instructions for AI assistants.
 -   **`HUMANS` files** provide collaboration guidance for human developers.
