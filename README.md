@@ -1,8 +1,8 @@
 # Agents
 
-AGENTS.md files for your AI.
+`AGENTS` files for your AI.
 
-HUMANS.md files for you.
+`HUMANS` files for you.
 
 Helping you standardize your AI collaboration process.
 
