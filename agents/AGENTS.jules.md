@@ -9,18 +9,22 @@ This document contains repository-specific operational instructions for the Jule
 3.  **Self-Correct:** If a step fails, analyze, revise plan, and communicate.
 4.  **Test:** Run all relevant tests.
 5.  **Review:** Use `request_code_review()` before submitting. Address all feedback.
-6.  **Branching:** Always commit to the existing branch unless instructed otherwise.
+6.  **Branching:** Create a new branch for each new task. See the Branching Protocol below.
 7.  **Submit:** Submit work after all tests and reviews pass.
 
-## Handling Follow-up Fixes
+## Branching Protocol
 
-If the user indicates that a branch has been merged and they have follow-up fixes, you must not reuse the old branch.
+**This is a critical directive. All work must be done on a dedicated feature branch.**
 
-1.  **Acknowledge the Merge:** Confirm with the user that the previous work was merged.
-2.  **Propose a New Branch:** Explain that the best practice is to create a new branch for the new fixes.
-3.  **Request Details:** Ask the user to provide the details of the required fixes.
-4.  **Create a New Plan:** Once you have the details, create and set a new plan for the work.
-5.  **Use a New Branch:** Create a new, descriptive branch name for the follow-up task when you submit.
+### New Tasks
+At the very beginning of any new task, immediately after the initial planning phase, you **must** create a new branch.
+
+1.  **Use `run_in_bash_session` to execute the `git checkout -b` command.**
+2.  **Choose a descriptive, lowercase, kebab-case branch name.** (e.g., `feat-add-user-authentication`, `fix-login-button-bug`).
+3.  All subsequent work for the task must be committed to this branch.
+
+### Follow-up Fixes After a Merge
+If a user asks for small fixes to a feature that has already been merged, you **must** treat it as a new task and create a new branch. **Do not** attempt to reuse or commit to the old, merged branch. Follow the same process as for a new task.
 
 ## File Modification Protocol
 

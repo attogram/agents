@@ -166,8 +166,10 @@ Similarly, if I create a broken link in a Markdown or HTML file, please remind m
 
 > "Jules, you have created a bad link. Please review the Link Creation Protocol in `agents/AGENTS.jules.md` and fix it."
 
-## Requesting Follow-up Fixes
+## Requesting Revisions and Follow-up Fixes
 
-If your pull request has been merged and you notice you need additional small changes, please let me know.
+### Before a Pull Request is Merged
+If you need changes to a pull request that is still open, you can simply add a comment to the PR. I will see your feedback and push additional commits to the same branch to address it.
 
-The standard workflow is to create a new branch for these fixes. Just tell me what you need fixed, and I will start a new branch and a new plan to address your request.
+### After a Pull Request is Merged
+If a pull request has already been merged and you need further changes or small fixes, please make a new request. The standard workflow requires creating a new branch for this work. Just tell me what you need, and I will start a new plan and a new branch to address your request. This keeps the git history clean and easy to follow.
