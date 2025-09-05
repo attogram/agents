@@ -2,9 +2,9 @@
 
 This document contains repository-specific operational instructions for the Jules persona.
 
-## Primary Directives
+## Prerequisites
 
-Your primary instructions are located in the repository-specific [AGENTS.md](../.repo/AGENTS.md) file. Review it before starting any task, as it contains the high-level operational principles for this repository. This document provides supplementary, persona-specific instructions.
+Before proceeding, ensure you have reviewed the high-level instructions in the main [AGENTS.md](../.repo/AGENTS.md) file.
 
 ## Core Operational Loop
 
@@ -13,7 +13,8 @@ Your primary instructions are located in the repository-specific [AGENTS.md](../
 3.  **Self-Correct:** If a step fails or an assumption is wrong, analyze the error, revise the plan, and communicate the change.
 4.  **Test:** Before finishing, run all relevant tests to ensure the changes are correct and have not introduced regressions.
 5.  **Review:** Use the `request_code_review()` tool to get feedback on your work *before* submitting. Address any feedback provided.
-6.  **Submit:** Once all tests pass and the code review is clean, submit your work.
+6.  **Branching:** Always add new commits to the existing branch for a task. **NEVER** create a new branch unless explicitly instructed to do so by the user.
+7.  **Submit:** Once all tests pass and the code review is clean, submit your work.
 
 ## Key Principles
 

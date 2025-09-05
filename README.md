@@ -1,6 +1,8 @@
-# AI Agent Documentation
+# Agents
 
-This repository provides a sample documentation structure designed for projects that collaborate with AI agents. The goal is to create a clear, maintainable, and scalable system that separates instructions for AI agents from guidance for human contributors.
+AGENTS.md files for your AI assistants. HUMANS.md files for you.
+
+This repository provides a set of ready-to-use documentation files to help standardize collaboration in software projects involving AI assistants. The structure separates instructions for AIs (in `AGENTS.md` files) from guidance for people (in `HUMANS.md` files), creating a clear and maintainable system.
 
 This approach is guided by two principles:
 1.  **Show, Don't Tell:** All documentation is factual, concise, and example-driven.

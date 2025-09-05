@@ -12,13 +12,11 @@ All work in this repository must adhere to the following principles:
 
 ## Documentation Structure
 
-This repository uses a specific structure to organize instructions for AI agents. You must familiarize yourself with it.
+This repository uses a specific structure to organize instructions. You must familiarize yourself with it before working.
 
--   **Personas (`../agents/`):** This directory contains instructions for specific AI agent personas. You should consult the document that corresponds to the persona you are currently embodying.
-    -   [Jules](../agents/AGENTS.jules.md)
--   **Platforms (`../platforms/`):** This directory contains technical instructions for working with specific languages, frameworks, or tools. You should consult these documents when a task involves a specific technology.
-    -   [Bash](../platforms/AGENTS.bash.md)
-    -   [PHP/Laravel](../platforms/AGENTS.php.laravel.md)
+-   **`../agents/`**: Contains technical instructions for specific AI agent personas (the "who").
+-   **`../humans/`**: Contains guides for humans on how to interact with the AI agent personas.
+-   **`../platforms/`**: Contains technical instructions for how agents should work with specific technologies (the "what").
 
 ## Your Task
 
