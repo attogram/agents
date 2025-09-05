@@ -1,47 +1,42 @@
-# Hello, AI assistant!
+# AGENTS.md Sample File
 
-This file provides guidance for AI assistants to support this project effectively.
-
----
-
-## How you can help
-
-You can support this project by:
-
-- Analyzing and explaining existing code.
-- Suggesting clean, maintainable improvements.
-- Identifying bugs and logical issues.
-- Assisting with documentation.
-- Helping with test design and quality checks.
-- Offering guidance that respects the existing technical direction.
+This document provides a sample file for instructing AI assistants. Copy this file to the root of your repository and customize it with your project's specific details.
 
 ---
 
-## Guidelines
+# AI Assistant Instructions
 
-- Align with the project's existing structure and conventions.
-- Prioritize clarity, simplicity, and maintainability.
-- Ensure any suggestions are grounded in the existing context.
-- Work within the current project constraints.
+This file provides instructions for AI assistants working on this project.
 
----
+## Core Objective
 
-## My Limitations
+Your primary goal is to [**Describe the AI's main purpose, e.g., "assist with developing new features in our React frontend"**]. You are expected to write, debug, test, and document code according to the standards outlined below.
 
-It's important to understand my limitations to ensure we can work together effectively.
+## Project Overview
 
-### Repository and File State
+- **Project Name:** [**Your Project Name**]
+- **Description:** [**A brief, one-sentence description of the project.**]
+- **Tech Stack:** [**List the key technologies, e.g., Python, Django, PostgreSQL, React**]
 
-*   **I cannot re-pull or re-clone the repository.** My environment is initialized with the state of the repository at the beginning of our session. I cannot fetch updates from the remote repository. If you need to incorporate recent changes from your remote, you will have to restart our session.
-*   **`restore_file` has limitations.** The `restore_file` tool will only revert a file to its state *at the beginning of our current session*. It does not pull the latest version from the remote repository.
+## Development Workflow
 
-### Corrupted Development Environment
+1.  **Dependencies:** This project uses [**dependency tool, e.g., npm, pip, composer**]. Install dependencies with `[command, e.g., npm install]`.
+2.  **Running the App:** To run the application locally, use the command `[run command, e.g., npm run dev]`.
+3.  **Branching:** Create a new branch for each task. Use the format `[prefix]/[short-description]`, e.g., `feature/add-login-page`.
 
-*   My development environment can sometimes become corrupted due to complex dependency issues or unforeseen errors.
-*   If you suspect the environment is corrupted (e.g., tests fail unexpectedly, dependencies cannot be installed correctly), the most reliable solution is to **restart our session**. This will provide a fresh, clean environment.
+## Testing
 
-### General Guidance
+- **Test Suite:** The test suite is run with the command `[test command, e.g., npm test]`.
+- **Testing Policy:** For new features, you must write corresponding tests. For bug fixes, you must first write a failing test that reproduces the bug. All tests must pass before submitting work.
 
-To get the most out of my assistance, please provide clear and specific instructions. If you anticipate that I'll need to work with recent changes, please ensure they are in the repository *before* you start our session.
+## Coding Standards
 
----
+- **Style Guide:** This project follows the [**name of style guide, e.g., PEP 8, PSR-12**].
+- **Linter:** We use [**linter name, e.g., ESLint, RuboCop**]. Run the linter with `[linter command]`. Please fix any issues it reports.
+- **Key Conventions:**
+  - [**Add a key project-specific convention here, e.g., "All API responses must be in the JSend format."**]
+  - [**Add another key convention here.**]
+
+## Additional Context
+
+[**This is a free-form section where you can add any other important information, links to internal wikis, or context the AI might need to be successful.**]

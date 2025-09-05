@@ -1,36 +1,30 @@
 # Agents
 
-> A collection of `AGENTS.md` templates for guiding AI assistants.
+AGENTS.md files for your AI. HUMANS.md files for you.
 
-Use these `AGENTS.md` files to provide clear instructions for AI coding assistants, ensuring they align with your project's standards and technologies.
+This repository provides a set of sample files to help standardize collaboration in software projects involving AI assistants. The structure separates instructions for AIs (in `AGENTS.md` files) from guidance for people (in `HUMANS.md` files), creating a clear and maintainable system.
 
----
+## How It Works
 
-## The `AGENTS.md` Philosophy
+The documentation is split into two main categories: instructions for humans and instructions for AIs.
 
-An `AGENTS.md` file serves as a set of instructions for an external AI helper, like a coding assistant in your IDE or a chatbot. Think of it as a `CONTRIBUTING.md` for AI collaborators. It sets the rules of engagement, defines the project's boundaries, and clarifies how the AI can be most helpful.
+- **[HUMANS.md](./HUMANS.md):** The primary entry point for human collaborators. It explains how to work effectively with the AI agents involved in this project.
+- **[AGENTS.md](./AGENTS.md):** The primary entry point for AI agents. It provides instructions and context for the AI, including pointers to persona- and platform-specific guidelines.
 
-The goal is to leverage AI assistance effectively for development tasks like debugging, refactoring, documentation, and testing.
+## Directory Structure
 
-## How to Use
+The documentation is organized into the following directories:
 
-1.  Choose the `AGENTS.md` template that best fits your project's technology stack.
-2.  Copy the file into the root of your repository and name it `AGENTS.md`.
-3.  Customize it with specific details about your project (e.g., build commands, test scripts, coding standards).
+- `./.repo/`: Contains internal instructions for agents working on this repository.
+- `./humans/`: Contains guides for humans on how to interact with specific AI agent personas.
+- `./agents/`: Contains technical instructions for specific AI agent personas.
+- `./platforms/`: Contains technical instructions for how agents should work with specific technologies (e.g., programming languages, frameworks, tools).
 
-## Included Templates
-
-This repository provides a set of templates to start from:
-
-- [`AGENTS.md`](./AGENTS.md): A generic template suitable for any project. It provides a good starting point for customization.
-- [`AGENTS.php.md`](./AGENTS.php.md): A template for general PHP projects, with guidelines for PHPUnit and PSR-12 standards.
-- [`AGENTS.php.laravel.md`](./AGENTS.php.laravel.md): A template for Laravel projects, including instructions for Pest and Artisan commands.
-- [`AGENTS.bash.bats.md`](./AGENTS.bash.bats.md): A template for Bash projects that use BATS for testing.
+For more details on contributing to the codebase itself, see [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ---
 
-## Example Agent Profile
+This approach is guided by two principles:
 
-In addition to templates, this repository also contains an example of a "filled-out" agent profile for an AI assistant named Jules. This file, `AGENTS.jules.md`, documents the specific tools and capabilities of that agent. It can serve as a reference for how an `AGENTS.md` file can be used to document an AI's development environment.
-
-- [`AGENTS.jules.md`](./AGENTS.jules.md): An example profile for the AI assistant, Jules.
+1.  **Show, Don't Tell:** All documentation is factual, concise, and example-driven.
+2.  **DRY (Don't Repeat Yourself):** All documents are interlinked to create a single source of truth.
