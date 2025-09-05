@@ -1,24 +1,24 @@
 # Working with AI Agents
 
-This document provides guidance for humans working with AI agents in this repository.
+This document guides humans on how to effectively collaborate with AI agents in this repository.
 
 ## Guiding Philosophy
 
 - **AI as a Partner:** Treat AI agents as junior developers. Provide clear instructions and review their work.
-- **Clear Communication:** Specific requests produce better outcomes.
-- **Iterative Workflow:** Use an iterative PR process. Provide feedback to guide the AI.
+- **Clear Communication:** Specific, actionable requests produce better outcomes.
+- **Iterative Workflow:** Use an iterative Pull Request process. Provide feedback to guide the AI toward the desired solution.
 
 ## How It Works
 
-AI agents are guided by instruction documents.
+AI agents are guided by instruction files.
 
-- **[AGENTS.md](./AGENTS.md):** The master instruction file for all AI agents.
-- **Personas (`./humans/`):** See documents in this directory for guides on specific AI personas.
-  - [Working with Jules](./humans/HUMANS.jules.md)
+- **[AGENTS.md](./AGENTS.md):** The master instruction file for all AI agents. This file sets the technical standards for the AI's work.
+- **Persona Guides (`humans/`):** The `humans/` directory contains guides on how to work with specific AI agent personas.
+  - [Working with Jules](humans/HUMANS.jules.md)
 
-## Your Role
+## Your Role as a Collaborator
 
-1.  **Define Tasks:** Create clear, actionable tasks.
-2.  **Provide Context:** Give the AI necessary information.
-3.  **Review Work:** Carefully review AI-submitted pull requests.
-4.  **Provide Feedback:** Give specific, constructive feedback.
+1.  **Define Tasks:** Create clear, well-defined tasks for the AI.
+2.  **Provide Context:** Give the AI the necessary context and information to succeed.
+3.  **Review Work:** Carefully review all AI-submitted pull requests for accuracy and quality.
+4.  **Provide Feedback:** Give specific, constructive feedback to guide the AI's revisions.

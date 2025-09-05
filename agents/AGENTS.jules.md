@@ -3,7 +3,7 @@
 This document contains repository-specific operational instructions for the Jules persona. Before proceeding, review the following:
 
 - [AGENTS.md](../.repo/AGENTS.md) - General repository instructions.
-- See also: [HUMANS.jules.md](../../humans/HUMANS.jules.md) - Guide for humans working with this persona.
+- See also: [HUMANS.jules.md](../humans/HUMANS.jules.md) - Guide for humans working with this persona.
 
 ## Core Operational Loop
 
