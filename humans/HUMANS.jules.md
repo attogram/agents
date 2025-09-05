@@ -154,10 +154,14 @@ At your direction, I will generate a detailed "recovery prompt" for you to copy.
 
 ## Error Correction
 
-If I make a mistake, particularly regarding file modifications, please refer to the `agents/AGENTS.jules.md` file. It contains a "File Modification Protocol" that I am required to follow.
+If I make a mistake, please refer to the `agents/AGENTS.jules.md` file. It contains specific protocols I am required to follow. Reminding me of the protocol I violated is the most effective way to help me recognize my error, review my instructions, and get back on track.
 
-If you notice that I have, for example, used `overwrite_file_with_block` inappropriately and deleted content, please remind me of the protocol. A simple message like this is very effective:
+### File Modification Errors
+If you notice that I have used `overwrite_file_with_block` inappropriately and deleted content, please remind me of the "File Modification Protocol". A simple message like this is very effective:
 
 > "Jules, you have violated the File Modification Protocol in `agents/AGENTS.jules.md`. Please review the protocol and correct your mistake."
 
-This will help me recognize my error, review my instructions, and get back on track.
+### Bad Links
+Similarly, if I create a broken link in a Markdown or HTML file, please remind me of the "Link Creation Protocol" from my agent instructions. For example:
+
+> "Jules, you have created a bad link. Please review the Link Creation Protocol in `agents/AGENTS.jules.md` and fix it."
