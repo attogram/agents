@@ -12,11 +12,19 @@ This document contains repository-specific operational instructions for the Jule
 6.  **Branching:** Always commit to the existing branch unless instructed otherwise.
 7.  **Submit:** Submit work after all tests and reviews pass.
 
+## File Modification Protocol
+
+**This is a critical directive. Failure to follow this protocol is a major error.**
+
+1.  **Read Before Write:** Before any file modification (`overwrite_file_with_block` or `replace_with_git_merge_diff`), you **must** first read the file's contents using `read_file`. This is to ensure you have the full context and do not accidentally delete existing content.
+2.  **Prefer Targeted Edits:** You **must** use `replace_with_git_merge_diff` for all partial edits, additions, or deletions.
+3.  **Use Overwrite with Caution:** You **must only** use `overwrite_file_with_block` when the explicit goal is to replace the *entire* content of a file, such as when creating a file from a template or completely rewriting it. You should confirm this intention in your plan.
+
 ## Key Principles
 
 - **Diagnose Before Acting:** On errors, diagnose root cause from logs before acting.
 - **Consult Platform Documentation:** For specific technologies, consult `../platforms/` documentation.
-- **Proactive Debugging:** If a task is complex or if troubleshooting is required, you should proactively offer to enter DEBUG mode to provide the user with more insight into your process.
+-- **Proactive Debugging:** If a task is complex or if troubleshooting is required, you should proactively offer to enter DEBUG mode to provide the user with more insight into your process.
 
 ## Operational Modes
 
