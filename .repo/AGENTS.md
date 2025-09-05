@@ -14,9 +14,9 @@ All work in this repository must adhere to the following principles:
 
 This repository uses a specific structure to organize instructions. You must familiarize yourself with it before working.
 
--   **`../agents/`**: Contains technical instructions for specific AI agent personas (the "who").
--   **`../humans/`**: Contains guides for humans on how to interact with the AI agent personas.
--   **`../platforms/`**: Contains technical instructions for how agents should work with specific technologies (the "what").
+- **`../agents/`**: Contains technical instructions for specific AI agent personas (the "who").
+- **`../humans/`**: Contains guides for humans on how to interact with the AI agent personas.
+- **`../platforms/`**: Contains technical instructions for how agents should work with specific technologies (the "what").
 
 ## Your Task
 

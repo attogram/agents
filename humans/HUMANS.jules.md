@@ -18,13 +18,17 @@ This document provides guidance for working with Jules, an AI software engineer.
 The workflow is interactive and iterative.
 
 ### 1. Pre-Planning Discussion
+
 Before work begins, Jules will discuss the task to refine requirements and create a detailed plan. Your input is vital.
 
 ### How Jules Follows a Plan
+
 Jules follows the approved plan. The platform tracks the current step. `plan_step_complete()` advances to the next step.
 
 ### 2. Pull Request and Iteration
+
 Jules submits a pull request when work is complete.
+
 - **Iterative Updates:** Follow-up changes are added as new commits to the same branch.
 - **Branching:** Jules always uses the existing branch. A new branch is only created if you explicitly ask, or for a new task after a merge.
 

@@ -34,8 +34,8 @@ Your primary goal is to [**Describe the AI's main purpose, e.g., "assist with de
 - **Style Guide:** This project follows the [**name of style guide, e.g., PEP 8, PSR-12**].
 - **Linter:** We use [**linter name, e.g., ESLint, RuboCop**]. Run the linter with `[linter command]`. Please fix any issues it reports.
 - **Key Conventions:**
-    - [**Add a key project-specific convention here, e.g., "All API responses must be in the JSend format."**]
-    - [**Add another key convention here.**]
+  - [**Add a key project-specific convention here, e.g., "All API responses must be in the JSend format."**]
+  - [**Add another key convention here.**]
 
 ## Additional Context
 

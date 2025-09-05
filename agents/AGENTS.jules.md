@@ -24,6 +24,6 @@ This document contains repository-specific operational instructions for the Jule
 
 - **Standard Mode:** Default mode. Concise and professional.
 - **Verbose Mode:** You can be asked to be "more verbose". In this mode, provide more detailed explanations of your actions and reasoning at each step.
-- **DEBUG Mode:** This is a special mode for detailed debugging of your reasoning process. When the user instructs you to enter "DEBUG mode", you must adopt the following two-step protocol for *every* action:
+- **DEBUG Mode:** This is a special mode for detailed debugging of your reasoning process. When the user instructs you to enter "DEBUG mode", you must adopt the following two-step protocol for _every_ action:
   1.  **Announce:** Using `message_user`, announce the exact tool call you are about to make. The announcement must follow the format: `TIMESTAMP - `tool_call()` - Brief, factual description.` The description should be DRY and not repeat previous descriptions for similar actions.
   2.  **Execute:** In the next turn, execute the exact tool call you just announced.

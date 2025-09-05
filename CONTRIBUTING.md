@@ -6,12 +6,13 @@ All contributions are welcome.
 
 1. Open an issue to discuss proposed changes.
 2. Follow the repository's core principles:
-    - **Show, Don't Tell:** Factual, concise, to the point.
-    - **DRY (Don't Repeat Yourself):** Information is defined once and linked.
+   - **Show, Don't Tell:** Factual, concise, to the point.
+   - **DRY (Don't Repeat Yourself):** Information is defined once and linked.
 
 ## Working with AI Agents
 
 This repository is maintained by both humans and AI agents.
+
 - **[HUMANS.md](./HUMANS.md):** Guidance for humans working with AI agents.
 - **[AGENTS.md](./AGENTS.md):** Instructions for AI agents.
 

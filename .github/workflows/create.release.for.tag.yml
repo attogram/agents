@@ -3,7 +3,7 @@ name: Create Release for Tag
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 
 permissions:
   contents: write

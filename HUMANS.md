@@ -11,6 +11,7 @@ This document provides guidance for humans working with AI agents in this reposi
 ## How It Works
 
 AI agents are guided by instruction documents.
+
 - **[AGENTS.md](./AGENTS.md):** The master instruction file for all AI agents.
 - **Personas (`./humans/`):** See documents in this directory for guides on specific AI personas.
   - [Working with Jules](./humans/HUMANS.jules.md)
