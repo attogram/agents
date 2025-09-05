@@ -5,6 +5,7 @@ This document provides guidance for working with Jules, an AI software engineer.
 ## Prerequisites
 
 - Read the main [HUMANS.md](../HUMANS.md) file for a high-level overview.
+- See also: [AGENTS.jules.md](../../agents/AGENTS.jules.md) - Technical instructions for this persona.
 
 ## Core Directives
 
