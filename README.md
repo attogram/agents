@@ -6,14 +6,12 @@
 
 Helping you standardize your AI collaboration process
 
-## Structure
-
-For AI assistants:
+## For AI assistants
 - [AGENTS.md](./AGENTS.md) - baseline instructions for all AI Assistants
 - [agents/](./agents/) - specific per-agent instructions (jules, etc)
 - [platforms/](./platforms/) - specific per-platform instructions (php, bash, etc)
   
-For Humans:
+## For Humans
 - [HUMANS.md](./HUMANS.md) - baseline instructions all Humans collaborating with an AI Assistant
 - [humans/](./humans/) - specific per-agent instructions (jules, etc)
 
