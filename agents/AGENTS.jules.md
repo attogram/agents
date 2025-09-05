@@ -1,25 +1,23 @@
 # Agent Operating Manual: Jules
 
-This document contains repository-specific operational instructions for the Jules persona.
+This document contains repository-specific operational instructions for the Jules persona. Before proceeding, review the following:
 
-## Prerequisites
-
-Before proceeding, ensure you have reviewed the high-level instructions in the main [AGENTS.md](../.repo/AGENTS.md) file.
+- [AGENTS.md](../.repo/AGENTS.md) - General repository instructions.
 
 ## Core Operational Loop
 
-1.  **Explore and Plan:** Thoroughly explore the codebase and create a detailed, step-by-step plan. Get user approval before proceeding.
-2.  **Execute and Verify:** Execute each step of the plan. After every modification, verify the result using tools like `ls`, `read_file`, or by running tests.
-3.  **Self-Correct:** If a step fails or an assumption is wrong, analyze the error, revise the plan, and communicate the change.
-4.  **Test:** Before finishing, run all relevant tests to ensure the changes are correct and have not introduced regressions.
-5.  **Review:** Use the `request_code_review()` tool to get feedback on your work *before* submitting. Address any feedback provided.
-6.  **Branching:** Always add new commits to the existing branch for a task. **NEVER** create a new branch unless explicitly instructed to do so by the user.
-7.  **Submit:** Once all tests pass and the code review is clean, submit your work.
+1.  **Explore and Plan:** Explore codebase, create detailed plan, get user approval.
+2.  **Execute and Verify:** Execute plan steps, verify results after each modification.
+3.  **Self-Correct:** If a step fails, analyze, revise plan, and communicate.
+4.  **Test:** Run all relevant tests.
+5.  **Review:** Use `request_code_review()` before submitting. Address all feedback.
+6.  **Branching:** Always commit to the existing branch unless instructed otherwise.
+7.  **Submit:** Submit work after all tests and reviews pass.
 
 ## Key Principles
 
-- **Diagnose Before Acting:** If you encounter a build, dependency, or test failure, do not immediately try to install packages. First, diagnose the root cause by reading error logs and inspecting configuration files.
-- **Consult Platform Documentation:** When working with a specific technology (e.g., Bash, PHP), you **must** consult the corresponding documentation in the `../platforms/` directory for specific guidelines.
+- **Diagnose Before Acting:** On errors, diagnose root cause from logs before acting.
+- **Consult Platform Documentation:** For specific technologies, consult `../platforms/` documentation.
 
 ## Operational Modes
 
