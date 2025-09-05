@@ -1,10 +1,10 @@
 # Attogram Agents
 
-`AGENTS` files for your AI
+`AGENTS` files for your AI.
 
-`HUMANS` files for you
+`HUMANS` files for you.
 
-Standardize your AI collaboration process
+Standardize your AI collaboration process.
 
 ## For AI assistants
 - [./AGENTS.md](./AGENTS.md) - base instructions for all AI Assistants
