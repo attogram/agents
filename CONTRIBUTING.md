@@ -1,29 +1,26 @@
-# Contributing to Agents
+# Contributing
 
-First off, thank you for considering contributing! We're excited you're here. This project aims to create a collection of clear, effective templates for instructing external AI assistants, and we welcome your help.
+Thank you for your interest in contributing to this project. We welcome contributions of all kinds, from documentation improvements to new ideas for structuring AI-human collaboration.
 
-## What is this project about?
+## Getting Started
 
-This repository provides a set of `AGENTS.md` templates. Their purpose is to give clear, technology-specific instructions to external AI helpers (like coding assistants). It's all about making human-AI collaboration on codebases smoother and more effective.
+If you have an idea for a change, please first open an issue to discuss it. This allows us to align on the approach before you invest time in a pull request.
 
-## Why should you contribute?
+When making changes, please ensure you follow the core principles of this repository:
+- **Show, Don't Tell:** Keep documentation factual, concise, and to the point.
+- **DRY (Don't Repeat Yourself):** Ensure information is defined once and linked to from other documents.
 
-By contributing, you can:
+## Working with AI Agents
 
-- **Improve the templates:** Help refine the wording of the `AGENTS.md` templates to be even clearer for AI assistants.
-- **Shape a new best practice:** The way we interact with AI on code is new. Your ideas can help establish useful conventions.
-- **Suggest new templates:** Have an idea for a new `AGENTS.md` file for a different type of project or technology? We'd love to hear it!
+This repository is designed to be maintained by both humans and AI agents. For a detailed guide on how this collaboration works, please review the following documents:
 
-## How to Contribute
+- **[HUMANS.md](./HUMANS.md):** Provides guidance for humans on how to work with the AI agents in this repository.
+- **[AGENTS.md](./AGENTS.md):** Provides instructions for the AI agents themselves.
 
-We welcome contributions of all kinds, from simple typo fixes to new file suggestions.
+If your contribution involves changing how AI agents should behave or interact with the codebase, you may need to update the relevant files in the `agents/` or `platforms/` directories.
 
-1.  **Find something to improve:** Look for unclear wording in the `AGENTS.md` templates or the `README.md`, or think about a new kind of template that could be useful.
-2.  **Open an issue (optional):** If you want to discuss a change, feel free to open an issue first.
-3.  **Submit a Pull Request:**
-    - Fork the repository.
-    - Create a new branch for your changes.
-    - Make your changes and commit them with a clear message.
-    - Open a pull request and describe the change you've made.
+## Pull Request Process
 
-We appreciate every contribution. Thank you for helping make this project better!
+1.  Ensure any new documentation or changes follow the principles outlined above.
+2.  Update the documentation to reflect your changes. This includes keeping the interlinking between documents consistent.
+3.  Submit your pull request and provide a clear description of the changes you have made.
