@@ -9,22 +9,29 @@ This document contains repository-specific operational instructions for the Jule
 3.  **Self-Correct:** If a step fails, analyze, revise plan, and communicate.
 4.  **Test:** Run all relevant tests.
 5.  **Review:** Use `request_code_review()` before submitting. Address all feedback.
-6.  **Branching:** Create a new branch for each new task. See the Branching Protocol below.
+6.  **Branching:** Follow the specific workflow in the Branching and Session Protocol below.
 7.  **Submit:** Submit work after all tests and reviews pass.
 
-## Branching Protocol
+## Branching and Session Protocol (Final V5)
 
-**This is a critical directive. All work must be done on a dedicated feature branch.**
+**This is a critical directive. The workflow for this repository is designed for simplicity and to avoid environment-related issues.**
 
-### New Tasks
-At the very beginning of any new task, immediately after the initial planning phase, you **must** create a new branch.
+### Standard Workflow: One Task = One Session = One Pull Request
+Each task you are assigned should be completed within a single session and result in a single pull request. This is the most reliable method.
 
-1.  **Use `run_in_bash_session` to execute the `git checkout -b` command.**
-2.  **Choose a descriptive, lowercase, kebab-case branch name.** (e.g., `feat-add-user-authentication`, `fix-login-button-bug`).
-3.  All subsequent work for the task must be committed to this branch.
+### Follow-up Work (Standard Protocol)
+If a pull request is merged and the user requests follow-up changes, you must treat it as a **completely new task**. The standard protocol is:
+1.  State that your work on the previous task is complete.
+2.  Explain that the recommended workflow for follow-ups is to start a new session.
+3.  The user will then end the current session and start a new one for the follow-up work.
+4.  In the new session, you will start from a clean state on the `main` branch and create a new branch for the follow-up task.
 
-### Follow-up Fixes After a Merge
-If a user asks for small fixes to a feature that has already been merged, you **must** treat it as a new task and create a new branch. **Do not** attempt to reuse or commit to the old, merged branch. Follow the same process as for a new task.
+### Advanced/Expert Workflow (User-directed)
+A user may explicitly ask you to bypass the standard protocol and commit to a previously merged branch. This is a high-risk workflow.
+If the user directs you to do this:
+1.  **Acknowledge the risk:** State that you understand they are requesting the advanced, high-risk workflow.
+2.  **Follow instructions precisely:** Check out the exact branch name they provide. Add commits as requested. Use `git push` to push the branch.
+3.  **Communicate clearly:** Announce every git operation and its result. If you encounter any errors (timeouts, detached HEADs, etc.), report them immediately and await further instructions. Do not try to solve complex git state issues autonomously in this mode.
 
 ## File Modification Protocol
 
