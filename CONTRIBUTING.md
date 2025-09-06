@@ -1,3 +1,5 @@
+CONTRIBUTING.md v0.0.1
+
 # Contributing
 
 All contributions are welcome.
@@ -13,6 +15,7 @@ All contributions are welcome.
 
 This repository is maintained by both humans and AI agents.
 
+- **[README.md](./README.md):** The main project README.
 - **[HUMANS.md](./HUMANS.md):** Guidance for humans working with AI agents.
 - **[AGENTS.md](./AGENTS.md):** Instructions for AI agents.
 

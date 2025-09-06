@@ -1,3 +1,5 @@
+README.md v0.0.1
+
 # Attogram Agents
 
 `AGENTS` files for your AI.
@@ -18,6 +20,8 @@ Standardize your AI collaboration process.
 ## For Humans
 - [./HUMANS.md](./HUMANS.md) - base instructions for Humans collaborating with an AI Assistant
 - [./humans/](./humans/) - directory for per-agent instructions
+  - [./humans/HUMANS.claude.md](./humans/HUMANS.claude.md) - for working with Anthropic's Claude
+  - [./humans/HUMANS.claude.code.md](./humans/HUMANS.claude.code.md) - for working with Anthropic's Claude Code
   - [./humans/HUMANS.jules.md](./humans/HUMANS.jules.md) - for working with the Google Jules agent
 
 ## `AGENTS` and `HUMANS` files

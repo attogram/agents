@@ -1,3 +1,5 @@
+.repo/AGENTS.md v0.0.1
+
 # Agent Instructions
 
 This document provides the high-level instructions for AI agents working in this repository.
@@ -16,6 +18,8 @@ This repository uses a specific structure to organize instructions. You must fam
 
 ### Base Documents
 
+- **`../README.md`**: The main project README.
+- **`../CONTRIBUTING.md`**: The contributing guide.
 - **`../AGENTS.md`**: The base file for AI agent instructions.
 - **`../HUMANS.md`**: The base guide for humans collaborating with AI agents.
 

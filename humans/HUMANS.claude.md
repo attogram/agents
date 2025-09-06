@@ -1,6 +1,11 @@
+HUMANS.claude.md v0.0.1
+
 # Claude - AI Assistant
 
 This document provides guidance for humans collaborating with Claude, Anthropic's AI assistant, through the web interface, mobile app, or desktop application.
+
+- [Back to main HUMANS.md](../HUMANS.md)
+- [Claude's Agent Instructions](../agents/AGENTS.claude.md) (to be created)
 
 ## About Claude
 
