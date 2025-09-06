@@ -1,6 +1,12 @@
+AGENTS.bash.md v0.0.1
+
 # Bash and BATS Platform Guide
 
 This document provides guidelines for writing and testing Bash scripts in this repository.
+
+Related documents:
+- [PHP Platform Guide](./AGENTS.php.md)
+- [Laravel Platform Guide](./AGENTS.php.laravel.md)
 
 ## 1. Core Scripting Principles
 

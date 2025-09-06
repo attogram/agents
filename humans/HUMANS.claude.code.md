@@ -1,6 +1,11 @@
+HUMANS.claude.code.md v0.0.1
+
 # Claude Code - AI Coding Assistant
 
 This document provides guidance for humans collaborating with Claude through Claude Code, Anthropic's command line tool for agentic coding.
+
+- [Back to main HUMANS.md](../HUMANS.md)
+- [Claude Code's Agent Instructions](../agents/AGENTS.claude.code.md) (to be created)
 
 ## About Claude Code
 

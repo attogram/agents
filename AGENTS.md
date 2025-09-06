@@ -1,6 +1,17 @@
+AGENTS.md v0.0.1
+
 # AI Assistant Instructions
 
-This document provides instructions for AI assistants working on this project.
+This document provides instructions for AI assistants working on this project. Related documents:
+- [HUMANS.md](./HUMANS.md)
+- [README.md](./README.md)
+- [CONTRIBUTING.md](./CONTRIBUTING.md)
+
+## Agent Personas
+
+- [Claude](agents/AGENTS.claude.md)
+- [Claude Code](agents/AGENTS.claude.code.md)
+- [Jules](agents/AGENTS.jules.md)
 
 ## Core Objective
 

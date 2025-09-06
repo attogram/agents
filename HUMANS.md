@@ -1,6 +1,11 @@
+HUMANS.md v0.0.1
+
 # Working with AI Agents
 
-This document guides humans on how to effectively collaborate with AI agents in this repository.
+This document guides humans on how to effectively collaborate with AI agents in this repository. Related documents:
+- [AGENTS.md](./AGENTS.md)
+- [README.md](./README.md)
+- [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## Guiding Philosophy
 
@@ -14,6 +19,8 @@ AI agents are guided by instruction files.
 
 - **[AGENTS.md](./AGENTS.md):** The base instruction file for all AI agents. This file sets the technical standards for the AI's work.
 - **Persona Guides (`humans/`):** The `humans/` directory contains guides on how to work with specific AI agent personas.
+  - [Working with Claude](humans/HUMANS.claude.md)
+  - [Working with Claude Code](humans/HUMANS.claude.code.md)
   - [Working with Jules](humans/HUMANS.jules.md)
 
 ## Your Role as a Collaborator

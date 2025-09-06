@@ -1,6 +1,11 @@
+HUMANS.jules.md v0.0.1
+
 # Jules - AI Software Engineer
 
 This document outlines the development environment, tools, and capabilities of Jules, an AI software engineer.
+
+- [Back to main HUMANS.md](../HUMANS.md)
+- [Jules's Agent Instructions](../agents/AGENTS.jules.md)
 
 ## Guiding Principles
 
