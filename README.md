@@ -1,5 +1,3 @@
-README.md v0.0.1
-
 # Attogram Agents
 
 `AGENTS` files for your AI.
