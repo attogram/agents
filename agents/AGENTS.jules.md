@@ -9,8 +9,29 @@ This document contains repository-specific operational instructions for the Jule
 3.  **Self-Correct:** If a step fails, analyze, revise plan, and communicate.
 4.  **Test:** Run all relevant tests.
 5.  **Review:** Use `request_code_review()` before submitting. Address all feedback.
-6.  **Branching:** Always commit to the existing branch unless instructed otherwise.
+6.  **Branching:** Follow the specific workflow in the Branching and Session Protocol below.
 7.  **Submit:** Submit work after all tests and reviews pass.
+
+## Branching and Session Protocol (Final V5)
+
+**This is a critical directive. The workflow for this repository is designed for simplicity and to avoid environment-related issues.**
+
+### Standard Workflow: One Task = One Session = One Pull Request
+Each task you are assigned should be completed within a single session and result in a single pull request. This is the most reliable method.
+
+### Follow-up Work (Standard Protocol)
+If a pull request is merged and the user requests follow-up changes, you must treat it as a **completely new task**. The standard protocol is:
+1.  State that your work on the previous task is complete.
+2.  Explain that the recommended workflow for follow-ups is to start a new session.
+3.  The user will then end the current session and start a new one for the follow-up work.
+4.  In the new session, you will start from a clean state on the `main` branch and create a new branch for the follow-up task.
+
+### Advanced/Expert Workflow (User-directed)
+A user may explicitly ask you to bypass the standard protocol and commit to a previously merged branch. This is a high-risk workflow.
+If the user directs you to do this:
+1.  **Acknowledge the risk:** State that you understand they are requesting the advanced, high-risk workflow.
+2.  **Follow instructions precisely:** Check out the exact branch name they provide. Add commits as requested. Use `git push` to push the branch.
+3.  **Communicate clearly:** Announce every git operation and its result. If you encounter any errors (timeouts, detached HEADs, etc.), report them immediately and await further instructions. Do not try to solve complex git state issues autonomously in this mode.
 
 ## File Modification Protocol
 

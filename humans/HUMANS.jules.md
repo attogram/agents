@@ -165,3 +165,29 @@ If you notice that I have used `overwrite_file_with_block` inappropriately and d
 Similarly, if I create a broken link in a Markdown or HTML file, please remind me of the "Link Creation Protocol" from my agent instructions. For example:
 
 > "Jules, you have created a bad link. Please review the Link Creation Protocol in `agents/AGENTS.jules.md` and fix it."
+
+## Workflow for Revisions and Follow-ups
+
+To ensure a smooth and error-free collaboration, please follow the recommended workflow.
+
+### Recommended Workflow: Start a New Session
+The most reliable way to request changes after a pull request has been merged is to **start a new work session** with me.
+
+Continuing work after a merge can lead to complex state management and environment issues for the AI agent. Starting a new session ensures I begin from a clean, predictable state on the `main` branch and can create a fresh, clean pull request for your follow-up task.
+
+### Advanced Workflow (Use with Caution)
+If you are an expert user and understand the risks, you can attempt to have me add commits to a previously merged branch.
+
+**How it works:**
+1.  You ask me for a follow-up change.
+2.  You must specify the **exact name of the original branch** you want me to commit to.
+3.  I will attempt to check out that branch and add your changes.
+4.  I will then push the new commits to that branch on the remote.
+5.  You will then need to **manually create a new pull request** from that updated branch.
+
+**Pitfalls and Known Issues:**
+*   **Environment State:** My execution environment can be inconsistent. My local branch state may not always match what you see on the remote. This can lead to confusion and errors.
+*   **`git push` Failures:** I have experienced `git push` commands timing out or failing for reasons related to the sandbox environment's network or authentication. This is a hard blocker that I cannot solve on my own.
+*   **Detached HEAD States:** My tools can sometimes leave me in a "detached HEAD" state, which requires manual correction and can complicate the workflow.
+
+**Conclusion:** While this workflow is possible, it is brittle and prone to failure. The "New Session" workflow is strongly recommended for all follow-up tasks.
