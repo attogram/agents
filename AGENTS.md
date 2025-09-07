@@ -6,6 +6,7 @@ This document provides instructions for AI assistants working on this project. R
 - [HUMANS.md](./HUMANS.md)
 - [README.md](./README.md)
 - [CONTRIBUTING.md](./CONTRIBUTING.md)
+- [PERSONAS.md](./PERSONAS.md)
 
 ## Agent Personas
 
