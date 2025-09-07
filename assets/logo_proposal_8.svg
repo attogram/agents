@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640">
+  <title>Logo Proposal 8: Open Box</title>
+  <g transform="skewY(-10)">
+    <rect x="340" y="220" width="600" height="300" fill="#1a237e"/>
+  </g>
+  <polygon points="340,220 440,170 1040,170 940,220" fill="#1a237e" />
+  <polygon points="940,220 1040,170 1040,470 940,520" fill="#101a5e" />
+  <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle" fill="#FFFFFF" font-size="150" font-family="monospace" transform="skewY(-10)">base</text>
+</svg>
