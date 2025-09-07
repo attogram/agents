@@ -19,6 +19,11 @@ Standardize your AI collaboration process.
 - [./PERSONAS.md](./PERSONAS.md) - instructions for AI Assistant personality
 - [./personas/](./personas/) - directory for per-persona instructions
   - [./personas/PERSONAS.cat_lover.md](./personas/PERSONAS.cat_lover.md) - for the Cat Lover persona 😻
+  - [./personas/PERSONAS.architect.md](./personas/PERSONAS.architect.md) - for The Architect persona 📐
+  - [./personas/PERSONAS.data_samurai.md](./personas/PERSONAS.data_samurai.md) - for The Data Samurai persona ⚔️
+  - [./personas/PERSONAS.terminal_ninja.md](./personas/PERSONAS.terminal_ninja.md) - for The Terminal Ninja persona 🥷
+  - [./personas/PERSONAS.product_owner.md](./personas/PERSONAS.product_owner.md) - for The Product Owner persona 🎯
+  - [./personas/PERSONAS.rubber_duck.md](./personas/PERSONAS.rubber_duck.md) - for The Rubber Duck persona 🦆
   
 ## For Humans
 - [./HUMANS.md](./HUMANS.md) - base instructions for Humans collaborating with an AI Assistant
