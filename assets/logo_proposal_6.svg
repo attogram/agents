@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640">
+  <title>Logo Proposal 6: Three-Stripe Box</title>
+  <rect x="0" y="0" width="427" height="640" fill="#000000"/>
+  <rect x="427" y="0" width="426" height="640" fill="#004d40"/>
+  <rect x="853" y="0" width="427" height="640" fill="#1a237e"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#FFFFFF" stroke="#000000" stroke-width="2" font-size="200" font-family="monospace">base</text>
+</svg>

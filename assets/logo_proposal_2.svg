@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640">
+  <title>Logo Proposal 2: Outlined Box</title>
+  <rect x="5" y="5" width="1270" height="630" fill="none" stroke="#004d40" stroke-width="10"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#004d40" font-size="200" font-family="monospace">base</text>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "name": "Base Template Dev Environment",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "dev",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-azuretools.vscode-docker", "eamodio.gitlens"]
+    }
+  }
+}

@@ -1,12 +1,23 @@
+[![Run Tests](https://github.com/attogram/agents/actions/workflows/ci.yml/badge.svg)](https://github.com/attogram/agents/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/attogram/agents?style=flat)](https://github.com/attogram/agents/releases)
+[![GitHub stars](https://img.shields.io/github/stars/attogram/agents?style=flat)](https://github.com/attogram/agents/stargazers)
+[![GitHub watchers](https://img.shields.io/github/watchers/attogram/agents?style=flat)](https://github.com/attogram/agents/watchers)
+[![Forks](https://img.shields.io/github/forks/attogram/agents?style=flat)](https://github.com/attogram/agents/forks)
+[![Issues](https://img.shields.io/github/issues/attogram/agents?style=flat)](https://github.com/attogram/agents/issues)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/t/attogram/agents?style=flat)](https://github.com/attogram/agents/commits/main/)
+[![License](https://img.shields.io/github/license/attogram/agents?style=flat)](./LICENSE)
+
 # Attogram Agents
 
-`AGENTS` files for your AI.
+ files for your AI.
 
-`HUMANS` files for you.
+ files for you.
 
-`PERSONAS` files for personality.
+ files for personality.
 
 Standardize your AI collaboration process.
+
+- [Documentation](./docs/README.md)
 
 ## For AI assistants
 - [./AGENTS.md](./AGENTS.md) - base instructions for all AI Assistants
@@ -32,13 +43,13 @@ Standardize your AI collaboration process.
   - [./humans/HUMANS.claude.code.md](./humans/HUMANS.claude.code.md) - for working with Anthropic's Claude Code
   - [./humans/HUMANS.jules.md](./humans/HUMANS.jules.md) - for working with the Google Jules agent
 
-## `AGENTS`, `HUMANS`, and `PERSONAS` files
+## , , and  files
 
-While `README.md` and `CONTRIBUTING.md` provide general information, AI-assisted workflows require specialized instructions.
+While  and  provide general information, AI-assisted workflows require specialized instructions.
 
--   **`AGENTS` files** provide technical instructions for AI assistants.
--   **`HUMANS` files** provide collaboration guidance for human developers.
--   **`PERSONAS` files** provide personality instructions for AI assistants.
+-   ** files** provide technical instructions for AI assistants.
+-   ** files** provide collaboration guidance for human developers.
+-   ** files** provide personality instructions for AI assistants.
 
 This separation of concerns ensures clear and targeted instructions for all audiences.
 
@@ -46,7 +57,7 @@ This separation of concerns ensures clear and targeted instructions for all audi
 
 We welcome contributions!
 
-- [`./.repo/`](./.repo/) - internal instructions for agents working on this repository
+- [](./.repo/) - internal instructions for agents working on this repository
 
 ## License
 

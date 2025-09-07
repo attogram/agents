@@ -1,0 +1,51 @@
+# .github/workflows/prettier.yml
+
+name: Format Code with Prettier
+
+# This workflow is triggered on pushes to the `main` branch and on pull
+# requests.
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks out the repository code so the workflow can access it.
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          # The GITHUB_TOKEN is required to allow the workflow to push changes
+          # back to the repository.
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Sets up the Node.js environment, which is needed to run Prettier.
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20" # Using a recent Long-Term Support (LTS) version of Node.js
+          cache: "npm" # Cache npm dependencies for faster runs
+
+      # Installs the project's dependencies, including Prettier itself,
+      # as defined in package.json and package-lock.json.
+      - name: Install Dependencies
+        run: npm install
+
+      # Runs Prettier to format all files in the repository.
+      # The --write flag tells Prettier to modify files in-place.
+      - name: Run Prettier
+        run: npx prettier --write .
+
+      # This action checks if Prettier made any changes. If so, it commits
+      # them back to the branch that the workflow was run on.
+      - name: Commit Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "style: Format code with Prettier"
+          # The file_pattern is set to all files, ensuring any change made by
+          # Prettier is committed.
+          file_pattern: "**/*.*"
