@@ -3,6 +3,7 @@ HUMANS.md v0.0.1
 # Working with AI Agents
 
 This document guides humans on how to effectively collaborate with AI agents in this repository. Related documents:
+
 - [AGENTS.md](./AGENTS.md)
 - [README.md](./README.md)
 - [CONTRIBUTING.md](./CONTRIBUTING.md)

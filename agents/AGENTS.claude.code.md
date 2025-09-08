@@ -9,4 +9,4 @@ This document contains repository-specific operational instructions for the Clau
 
 ---
 
-*This is a placeholder file. Instructions for the Claude Code agent persona are yet to be defined.*
+_This is a placeholder file. Instructions for the Claude Code agent persona are yet to be defined._

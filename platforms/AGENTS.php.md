@@ -5,6 +5,7 @@ AGENTS.php.md v0.0.1
 This document provides general guidelines for working on PHP projects in this repository. For framework-specific instructions, please see the corresponding platform guide.
 
 Related documents:
+
 - [Laravel Platform Guide](./AGENTS.php.laravel.md)
 - [Bash Platform Guide](./AGENTS.bash.md)
 

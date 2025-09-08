@@ -1,0 +1,57 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate release notes
+        id: generate_notes
+        run: |
+          PREVIOUS_TAG=$(git describe --tags --abbrev=0 HEAD^ 2>/dev/null || git rev-list --max-parents=0 HEAD)
+
+          echo "Previous tag: $PREVIOUS_TAG"
+
+          CHANGELOG=$(git log $PREVIOUS_TAG..HEAD --pretty=format:'* %s ([%h](https://github.com/${{ github.repository }}/commit/%H))')
+
+          USER_BODY=$(sed "s/\${TAG}/${{ github.ref_name }}/g" .github/RELEASE_BODY.md)
+
+          CHANGELOG_HEADER="## Changes"
+
+          DIFF_LINK="**Changelog**: https://github.com/${{ github.repository }}/compare/$PREVIOUS_TAG...${{ github.ref_name }}"
+
+          {
+            echo "FINAL_BODY<<EOF"
+            echo "$USER_BODY"
+            echo ""
+            echo "---"
+            echo "$CHANGELOG_HEADER"
+            echo "$CHANGELOG"
+            echo ""
+            echo "$DIFF_LINK"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Get Release Title
+        id: get_release_title
+        run: echo "title=$(sed "s/\${TAG}/${{ github.ref_name }}/g" .github/RELEASE_TITLE.txt)" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: ${{ steps.get_release_title.outputs.title }}
+          body: ${{ steps.generate_notes.outputs.FINAL_BODY }}
+          tag_name: ${{ github.ref_name }}
+          draft: false
+          prerelease: false

@@ -3,6 +3,7 @@ AGENTS.md v0.0.1
 # AI Assistant Instructions
 
 This document provides instructions for AI assistants working on this project. Related documents:
+
 - [HUMANS.md](./HUMANS.md)
 - [README.md](./README.md)
 - [CONTRIBUTING.md](./CONTRIBUTING.md)
