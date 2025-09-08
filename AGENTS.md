@@ -11,9 +11,9 @@ This document provides instructions for AI assistants working on this project. R
 
 ## Agent Personas
 
+- [Jules](agents/AGENTS.jules.md)
 - [Claude](agents/AGENTS.claude.md)
 - [Claude Code](agents/AGENTS.claude.code.md)
-- [Jules](agents/AGENTS.jules.md)
 
 ## Core Objective
 
