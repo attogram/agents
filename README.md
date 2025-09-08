@@ -20,27 +20,27 @@ Standardize your AI collaboration process.
 
 - [./AGENTS.md](./AGENTS.md) - base instructions for all AI Assistants
 - [./agents/](./agents/)
-  - [./agents/AGENTS.jules.md](./agents/AGENTS.jules.md) - for the Google Jules agent
+  - [./agents/AGENTS.jules.md](./agents/AGENTS.jules.md) - for Google Jules
 - [./platforms/](./platforms/)
   - [./platforms/AGENTS.bash.md](./platforms/AGENTS.bash.md) - for Bash
   - [./platforms/AGENTS.php.md](./platforms/AGENTS.php.md) - for PHP
-  - [./platforms/AGENTS.php.laravel.md](./platforms/AGENTS.php.laravel.md) - for PHP on Laravel
+  - [./platforms/AGENTS.php.laravel.md](./platforms/AGENTS.php.laravel.md) - for PHP with Laravel
 - [./PERSONAS.md](./PERSONAS.md)
-- [./personas/](./personas/) - directory for per-persona instructions
-  - [./personas/PERSONAS.cat-lover.md](./personas/PERSONAS.cat-lover.md) - for the Cat Lover persona 😻
-  - [./personas/PERSONAS.architect.md](./personas/PERSONAS.architect.md) - for The Architect persona 📐
-  - [./personas/PERSONAS.data-samurai.md](./personas/PERSONAS.data-samurai.md) - for The Data Samurai persona ⚔️
-  - [./personas/PERSONAS.terminal-ninja.md](./personas/PERSONAS.terminal-ninja.md) - for The Terminal Ninja persona 🥷
-  - [./personas/PERSONAS.product-owner.md](./personas/PERSONAS.product-owner.md) - for The Product Owner persona 🎯
-  - [./personas/PERSONAS.rubber-duck.md](./personas/PERSONAS.rubber-duck.md) - for The Rubber Duck persona 🦆
+- [./personas/](./personas/)
+  - [./personas/PERSONAS.cat-lover.md](./personas/PERSONAS.cat-lover.md) - Cat Lover persona 😻
+  - [./personas/PERSONAS.architect.md](./personas/PERSONAS.architect.md) - Architect persona 📐
+  - [./personas/PERSONAS.data-samurai.md](./personas/PERSONAS.data-samurai.md) - Data Samurai persona ⚔️
+  - [./personas/PERSONAS.terminal-ninja.md](./personas/PERSONAS.terminal-ninja.md) - Terminal Ninja persona 🥷
+  - [./personas/PERSONAS.product-owner.md](./personas/PERSONAS.product-owner.md) - Product Owner persona 🎯
+  - [./personas/PERSONAS.rubber-duck.md](./personas/PERSONAS.rubber-duck.md) - Rubber Duck persona 🦆
 
 ## For Humans
 
 - [./HUMANS.md](./HUMANS.md) - base instructions for Humans collaborating with an AI Assistant
 - [./humans/](./humans/)
-  - [./humans/HUMANS.claude.md](./humans/HUMANS.claude.md) - for working with Anthropic's Claude
-  - [./humans/HUMANS.claude.code.md](./humans/HUMANS.claude.code.md) - for working with Anthropic's Claude Code
-  - [./humans/HUMANS.jules.md](./humans/HUMANS.jules.md) - for working with the Google Jules agent
+  - [./humans/HUMANS.claude.md](./humans/HUMANS.claude.md) - for Anthropic Claude
+  - [./humans/HUMANS.claude.code.md](./humans/HUMANS.claude.code.md) - for Anthropic Claude Code
+  - [./humans/HUMANS.jules.md](./humans/HUMANS.jules.md) - for Google Jules
 
 ## Development
 
