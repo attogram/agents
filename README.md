@@ -9,7 +9,7 @@
 
 # Attogram Agents
 
-Standardize your AI collaboration process.
+Standardize your AI collaboration.
 
 - `AGENTS` files for your AI.
 - `HUMANS` files for you.
