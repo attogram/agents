@@ -9,24 +9,22 @@
 
 # Attogram Agents
 
-`AGENTS` files for your AI.
-
-`HUMANS` files for you.
-
-`PERSONAS` files for personality.
-
 Standardize your AI collaboration process.
+- `AGENTS` files for your AI.
+- `HUMANS` files for you.
+- `personas` files for your AI personality.
+- `platforms` files to get your AI up-to-speed on your tech stack.
 
 ## For AI assistants
 
 - [./AGENTS.md](./AGENTS.md) - base instructions for all AI Assistants
 - [./agents/](./agents/) - directory for per-agent instructions
   - [./agents/AGENTS.jules.md](./agents/AGENTS.jules.md) - for the Google Jules agent
-- [./platforms/](./platforms/) - directory for per-platform instructions
+- [./platforms/](./platforms/)
   - [./platforms/AGENTS.bash.md](./platforms/AGENTS.bash.md) - for Bash
   - [./platforms/AGENTS.php.md](./platforms/AGENTS.php.md) - for PHP
   - [./platforms/AGENTS.php.laravel.md](./platforms/AGENTS.php.laravel.md) - for PHP on Laravel
-- [./PERSONAS.md](./PERSONAS.md) - instructions for AI Assistant personality
+- [./PERSONAS.md](./PERSONAS.md)
 - [./personas/](./personas/) - directory for per-persona instructions
   - [./personas/PERSONAS.cat-lover.md](./personas/PERSONAS.cat-lover.md) - for the Cat Lover persona 😻
   - [./personas/PERSONAS.architect.md](./personas/PERSONAS.architect.md) - for The Architect persona 📐
@@ -38,20 +36,10 @@ Standardize your AI collaboration process.
 ## For Humans
 
 - [./HUMANS.md](./HUMANS.md) - base instructions for Humans collaborating with an AI Assistant
-- [./humans/](./humans/) - directory for per-agent instructions
+- [./humans/](./humans/)
   - [./humans/HUMANS.claude.md](./humans/HUMANS.claude.md) - for working with Anthropic's Claude
   - [./humans/HUMANS.claude.code.md](./humans/HUMANS.claude.code.md) - for working with Anthropic's Claude Code
   - [./humans/HUMANS.jules.md](./humans/HUMANS.jules.md) - for working with the Google Jules agent
-
-## `AGENTS`, `HUMANS`, and `PERSONAS` files
-
-While `README.md` and `CONTRIBUTING.md` provide general information, AI-assisted workflows require specialized instructions.
-
-- **`AGENTS` files** provide technical instructions for AI assistants.
-- **`HUMANS` files** provide collaboration guidance for human developers.
-- **`PERSONAS` files** provide personality instructions for AI assistants.
-
-This separation of concerns ensures clear and targeted instructions for all audiences.
 
 ## Development
 
