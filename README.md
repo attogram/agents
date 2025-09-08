@@ -10,15 +10,10 @@
 # Attogram Agents
 
 Standardize your AI collaboration process.
-
-`AGENTS` files for your AI.
-
-`HUMANS` files for you.
-
-`personas` to make your AI personality.
-
-`platforms` to assist your AI with your tech stack.
-
+- `AGENTS` files for your AI.
+- `HUMANS` files for you.
+- `personas` files to make your AI have personality.
+- `platforms` files to get your AI up-to-speed with your tech stack.
 
 ## For AI assistants
 
