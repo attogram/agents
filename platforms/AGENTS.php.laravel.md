@@ -5,6 +5,7 @@ AGENTS.php.laravel.md v0.0.1
 This document provides guidelines for working on Laravel projects. For comprehensive information, always refer to the [official Laravel documentation](https://laravel.com/docs).
 
 Related documents:
+
 - [PHP Platform Guide](./AGENTS.php.md)
 - [Bash Platform Guide](./AGENTS.bash.md)
 

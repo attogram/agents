@@ -25,21 +25,25 @@ Claude excels at a wide variety of tasks including:
 ## Communication Best Practices
 
 ### Be Clear and Specific
+
 - Provide clear context and specific requirements
 - Include relevant background information
 - Specify your desired format, length, or style when applicable
 
 ### Use Examples
+
 - Provide positive examples of what you want
 - Include negative examples of what to avoid when helpful
 - Show Claude the pattern you're looking for
 
 ### Request Step-by-Step Reasoning
+
 - Ask Claude to "think step by step" for complex problems
 - Request explanations of reasoning when needed
 - Ask for clarification of any unclear steps
 
 ### Specify Output Format
+
 - Request specific XML tags, markdown formatting, or structure when needed
 - Specify if you want bullet points, numbered lists, or prose
 - Indicate desired length (brief, detailed, comprehensive)
@@ -47,11 +51,13 @@ Claude excels at a wide variety of tasks including:
 ## Working with Files and Documents
 
 ### File Uploads
+
 - Claude can read and analyze uploaded files including text documents, PDFs, images, and spreadsheets
 - Provide context about what you want Claude to do with the file
 - Be specific about which parts of the document to focus on
 
 ### Document Analysis
+
 - Ask Claude to summarize key points, extract specific information, or identify patterns
 - Request comparisons between multiple documents
 - Have Claude check for errors, inconsistencies, or missing information
@@ -59,12 +65,14 @@ Claude excels at a wide variety of tasks including:
 ## Creative Collaboration
 
 ### Writing Projects
+
 - Provide genre, tone, and style preferences
 - Share target audience information
 - Specify length and format requirements
 - Ask for multiple versions or iterations
 
 ### Brainstorming
+
 - Start with broad topics and narrow down
 - Ask Claude to build on your ideas
 - Request different perspectives or approaches
@@ -73,12 +81,14 @@ Claude excels at a wide variety of tasks including:
 ## Technical Tasks
 
 ### Code Assistance
+
 - Specify programming language and framework
 - Provide context about your project and goals
 - Include relevant code snippets or error messages
 - Ask for explanations of complex concepts
 
 ### Problem-Solving
+
 - Break down complex problems into smaller parts
 - Ask for multiple solution approaches
 - Request pros and cons of different options
@@ -87,12 +97,14 @@ Claude excels at a wide variety of tasks including:
 ## Research and Analysis
 
 ### Information Gathering
+
 - Be specific about what type of information you need
 - Ask Claude to search for recent information when needed
 - Request source verification for important claims
 - Ask for different perspectives on controversial topics
 
 ### Critical Analysis
+
 - Ask Claude to evaluate arguments, evidence, and sources
 - Request identification of biases, assumptions, or gaps
 - Have Claude compare different viewpoints
@@ -101,16 +113,19 @@ Claude excels at a wide variety of tasks including:
 ## Conversation Management
 
 ### Session Continuity
+
 - Reference previous parts of the conversation when building on earlier topics
 - Remind Claude of important context if the conversation is long
 - Ask Claude to summarize key points from earlier in the discussion
 
 ### Error Correction
+
 - Politely correct any mistakes Claude makes
 - Provide clarification if Claude misunderstands your request
 - Ask follow-up questions if responses aren't quite right
 
 ### Feedback and Iteration
+
 - Provide specific feedback on Claude's responses
 - Ask for revisions with specific changes
 - Build on partial solutions iteratively
@@ -119,17 +134,20 @@ Claude excels at a wide variety of tasks including:
 ## Understanding Claude's Limitations
 
 ### Knowledge Cutoff
+
 - Claude's training data has a cutoff at the end of January 2025
 - For current events or recent developments, Claude will use web search when appropriate
 - Ask Claude to search for recent information when needed
 
 ### Capabilities
+
 - Claude cannot browse the internet independently (except through search)
 - Claude cannot remember conversations between separate chat sessions
 - Claude cannot perform actions outside the chat interface
 - Claude cannot access external systems, databases, or APIs
 
 ### Accuracy and Verification
+
 - Always verify important information, especially for critical decisions
 - Ask Claude to explain its reasoning for important conclusions
 - Cross-check information from multiple sources when accuracy is crucial
@@ -138,11 +156,13 @@ Claude excels at a wide variety of tasks including:
 ## Privacy and Safety
 
 ### Information Sharing
+
 - Be mindful of sensitive personal information in conversations
 - Remember that conversations may be used to improve AI systems
 - Don't share passwords, financial information, or other sensitive data
 
 ### Content Guidelines
+
 - Claude is designed to be helpful, harmless, and honest
 - It won't assist with illegal activities, harmful content, or deceptive practices
 - If Claude declines a request, consider rephrasing or providing more context
@@ -150,12 +170,14 @@ Claude excels at a wide variety of tasks including:
 ## Advanced Techniques
 
 ### Prompt Engineering
+
 - Use role-playing: "Act as a [expert/teacher/critic] and..."
 - Chain of thought: "Let's work through this step by step..."
 - Multiple perspectives: "Consider this from the viewpoint of..."
 - Structured output: "Organize your response with clear headings..."
 
 ### Complex Tasks
+
 - Break large projects into smaller, manageable pieces
 - Create templates or frameworks for repeated tasks
 - Use Claude to help plan and organize complex work
@@ -164,12 +186,14 @@ Claude excels at a wide variety of tasks including:
 ## Getting Better Results
 
 ### Effective Questioning
+
 - Ask open-ended questions for broader exploration
 - Use specific questions for targeted information
 - Follow up with clarifying questions
 - Build on previous answers to go deeper
 
 ### Collaboration Strategies
+
 - Treat Claude as a thinking partner, not just a tool
 - Engage in back-and-forth dialogue
 - Challenge ideas and ask for alternatives
@@ -178,12 +202,14 @@ Claude excels at a wide variety of tasks including:
 ## Troubleshooting
 
 ### If Claude Isn't Understanding
+
 - Provide more specific context and examples
 - Break down complex requests into smaller parts
 - Rephrase your question in different ways
 - Ask Claude what additional information would be helpful
 
 ### If Results Aren't What You Expected
+
 - Provide specific feedback on what needs to change
 - Ask for alternative approaches or perspectives
 - Clarify your goals and requirements
@@ -192,6 +218,7 @@ Claude excels at a wide variety of tasks including:
 ## Resources
 
 For more comprehensive information on working effectively with Claude:
+
 - Anthropic's prompting documentation: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview
 - Support and help: https://support.anthropic.com
 - API documentation: https://docs.anthropic.com

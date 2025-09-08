@@ -1,3 +1,12 @@
+[![Run Tests](https://github.com/attogram/agents/actions/workflows/ci.yml/badge.svg)](https://github.com/attogram/agents/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/attogram/agents?style=flat)](https://github.com/attogram/agents/releases)
+[![GitHub stars](https://img.shields.io/github/stars/attogram/agents?style=flat)](https://github.com/attogram/agents/stargazers)
+[![GitHub watchers](https://img.shields.io/github/watchers/attogram/agents?style=flat)](https://github.com/attogram/agents/watchers)
+[![Forks](https://img.shields.io/github/forks/attogram/agents?style=flat)](https://github.com/attogram/agents/forks)
+[![Issues](https://img.shields.io/github/issues/attogram/agents?style=flat)](https://github.com/attogram/agents/issues)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/t/attogram/agents?style=flat)](https://github.com/attogram/agents/commits/main/)
+[![License](https://img.shields.io/github/license/attogram/agents?style=flat)](./LICENSE)
+
 # Attogram Agents
 
 `AGENTS` files for your AI.
@@ -9,6 +18,7 @@
 Standardize your AI collaboration process.
 
 ## For AI assistants
+
 - [./AGENTS.md](./AGENTS.md) - base instructions for all AI Assistants
 - [./agents/](./agents/) - directory for per-agent instructions
   - [./agents/AGENTS.jules.md](./agents/AGENTS.jules.md) - for the Google Jules agent
@@ -24,8 +34,9 @@ Standardize your AI collaboration process.
   - [./personas/PERSONAS.terminal-ninja.md](./personas/PERSONAS.terminal-ninja.md) - for The Terminal Ninja persona 🥷
   - [./personas/PERSONAS.product-owner.md](./personas/PERSONAS.product-owner.md) - for The Product Owner persona 🎯
   - [./personas/PERSONAS.rubber-duck.md](./personas/PERSONAS.rubber-duck.md) - for The Rubber Duck persona 🦆
-  
+
 ## For Humans
+
 - [./HUMANS.md](./HUMANS.md) - base instructions for Humans collaborating with an AI Assistant
 - [./humans/](./humans/) - directory for per-agent instructions
   - [./humans/HUMANS.claude.md](./humans/HUMANS.claude.md) - for working with Anthropic's Claude
@@ -36,9 +47,9 @@ Standardize your AI collaboration process.
 
 While `README.md` and `CONTRIBUTING.md` provide general information, AI-assisted workflows require specialized instructions.
 
--   **`AGENTS` files** provide technical instructions for AI assistants.
--   **`HUMANS` files** provide collaboration guidance for human developers.
--   **`PERSONAS` files** provide personality instructions for AI assistants.
+- **`AGENTS` files** provide technical instructions for AI assistants.
+- **`HUMANS` files** provide collaboration guidance for human developers.
+- **`PERSONAS` files** provide personality instructions for AI assistants.
 
 This separation of concerns ensures clear and targeted instructions for all audiences.
 
