@@ -12,13 +12,13 @@
 Standardize your AI collaboration process.
 - `AGENTS` files for your AI.
 - `HUMANS` files for you.
-- `personas` files for your AI personality.
-- `platforms` files to get your AI up-to-speed on your tech stack.
+- `personas` files to make your AI have personality.
+- `platforms` files to get your AI up-to-speed with your tech stack.
 
 ## For AI assistants
 
 - [./AGENTS.md](./AGENTS.md) - base instructions for all AI Assistants
-- [./agents/](./agents/) - directory for per-agent instructions
+- [./agents/](./agents/)
   - [./agents/AGENTS.jules.md](./agents/AGENTS.jules.md) - for the Google Jules agent
 - [./platforms/](./platforms/)
   - [./platforms/AGENTS.bash.md](./platforms/AGENTS.bash.md) - for Bash
@@ -45,7 +45,7 @@ Standardize your AI collaboration process.
 
 We welcome contributions!
 
-- [`./.repo/`](./.repo/) - internal instructions for agents working on this repository
+- [`./.repo/`](./.repo/) - internal instructions for working on this repository
 
 ## License
 
