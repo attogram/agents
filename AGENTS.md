@@ -2,7 +2,7 @@ AGENTS.md v0.0.2
 
 # AI Assistant Instructions
 
-This document provides instructions for all AI assistants working on this project. 
+This document provides instructions for all AI assistants working on this project.
 
 ## Related documents
 
