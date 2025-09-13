@@ -23,9 +23,9 @@ AI agents are guided by instruction files.
 - **[AGENTS.md](./AGENTS.md):** The base instruction file for all AI agents.
   This file sets the technical standards for the AI's work.
 - The `humans/` directory contains guides on how to work with specific AI agent personas.
-  - [Working with Jules](humans/HUMANS.jules.md)
-  - [Working with Claude](humans/HUMANS.claude.md)
-  - [Working with Claude Code](humans/HUMANS.claude.code.md)
+  - [Working with Jules](./humans/jules.md)
+  - [Working with Claude](./humans/claude.md)
+  - [Working with Claude Code](./humans/claude.code.md)
 
 ## Your Role as a Collaborator
 

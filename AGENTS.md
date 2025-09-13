@@ -9,14 +9,14 @@ This document provides instructions for all AI assistants working on this projec
 - [HUMANS.md](./HUMANS.md)
 - [README.md](./README.md)
 - [CONTRIBUTING.md](./CONTRIBUTING.md)
-- [./personas/](./personas/PERSONAS.md)
-- [./platforms/](./platforms)
+- [./personas](./personas)
+- [./platforms](./platforms)
 
 ## Specific Agents
 
-- [Jules](agents/AGENTS.jules.md)
-- [Claude](agents/AGENTS.claude.md)
-- [Claude Code](agents/AGENTS.claude.code.md)
+- [Jules](agents/jules.md)
+- [Claude](agents/claude.md)
+- [Claude Code](agents/claude.code.md)
 
 ## Core Objective
 
