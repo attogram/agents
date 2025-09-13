@@ -35,7 +35,6 @@ jobs:
             echo "FINAL_BODY<<EOF"
             echo "$USER_BODY"
             echo ""
-            echo "---"
             echo "$CHANGELOG_HEADER"
             echo "$CHANGELOG"
             echo ""

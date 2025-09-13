@@ -9,7 +9,8 @@ This document provides instructions for all AI assistants working on this projec
 - [HUMANS.md](./HUMANS.md)
 - [README.md](./README.md)
 - [CONTRIBUTING.md](./CONTRIBUTING.md)
-- [PERSONAS.md](./PERSONAS.md)
+- [./personas/](./personas/PERSONAS.md)
+- [./platforms/](./platforms)
 
 ## Specific Agents
 
