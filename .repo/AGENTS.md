@@ -27,6 +27,7 @@ This repository uses a specific structure to organize instructions. You must fam
 
 - **`../agents/`**: Contains technical instructions for specific AI agent personas (the "who").
 - **`../humans/`**: Contains guides for humans on how to interact with the AI agent personas.
+- **`../personas/`**: Contains personality traits and profiles that agents can adopt (the "how").
 - **`../platforms/`**: Contains technical instructions for how agents should work with specific technologies (the "what").
 
 ## Your Task
