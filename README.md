@@ -45,9 +45,23 @@ Standardize your AI collaboration.
 
 ## Platforms
 
-- [Bash](./platforms/bash.md) - for Bash
-- [PHP](./platforms/php.md) - for PHP
-- [PHP with Laravel](./platforms/php.laravel.md) - for PHP with Laravel
+- [Bash](./platforms/bash.md)
+- [C++](./platforms/cpp.md)
+- [Docker](./platforms/docker.md)
+- [Go](./platforms/go.md)
+- [JavaScript](./platforms/javascript.md)
+  - [Next.js](./platforms/javascript-nextjs.md)
+  - [Node.js](./platforms/javascript-nodejs.md)
+  - [React](./platforms/javascript-react.md)
+  - [Vue.js](./platforms/javascript-vue.md)
+- [PHP](./platforms/php.md)
+  - [Laravel](./platforms/php.laravel.md)
+  - [WordPress](./platforms/php-wordpress.md)
+- [PostgreSQL](./platforms/postgresql.md)
+- [Python](./platforms/python.md)
+  - [Django](./platforms/python-django.md)
+- [Rust](./platforms/rust.md)
+- [TypeScript](./platforms/typescript.md)
 
 ## Development
 
