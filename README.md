@@ -45,9 +45,9 @@ Standardize your AI collaboration.
 
 ## Platforms
 
-- [./platforms/AGENTS.bash.md](./platforms/bash.md) - for Bash
-- [./platforms/AGENTS.php.md](./platforms/php.md) - for PHP
-- [./platforms/AGENTS.php.laravel.md](./platforms/php.laravel.md) - for PHP with Laravel
+- [Bash](./platforms/bash.md) - for Bash
+- [PHP](./platforms/php.md) - for PHP
+- [PHP with Laravel](./platforms/php.laravel.md) - for PHP with Laravel
 
 ## Development
 
