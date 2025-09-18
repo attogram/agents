@@ -30,11 +30,6 @@ jobs:
           node-version: "20" # Using a recent Long-Term Support (LTS) version of Node.js
           cache: "npm" # Cache npm dependencies for faster runs
 
-      # Installs the project's dependencies, including Prettier itself,
-      # as defined in package.json and package-lock.json.
-      - name: Install Dependencies
-        run: npm install
-
       # Runs Prettier to format all files in the repository.
       # The --write flag tells Prettier to modify files in-place.
       - name: Run Prettier
