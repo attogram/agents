@@ -19,8 +19,5 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Install Prettier
-        run: npm install --global prettier
-
-      - name: Run Prettier
-        run: prettier --check .
+      - name: Check Formatting with Prettier
+        run: npx prettier --check .
