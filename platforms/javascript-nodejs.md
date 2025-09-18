@@ -65,7 +65,8 @@ While the `http` module is powerful, most web servers in Node.js are built using
 - **Express.js**: A minimal and flexible web application framework that provides a robust set of features for web and mobile applications. It simplifies tasks like routing, middleware, and handling requests and responses.
 
 - **Basic Express Server**:
-  ```javascript
+
+  ````javascript
   const express = require('express');
   const app = express();
   const port = 3000;
@@ -80,6 +81,8 @@ While the `http` module is powerful, most web servers in Node.js are built using
       ```
 
   Node.js is also widely used for:
+
+  ````
 
 - **Building command-line interface (CLI) tools.**
 - **Acting as the runtime for frontend build tools** like Webpack, Vite, and Parcel.
