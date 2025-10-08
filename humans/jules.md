@@ -73,74 +73,49 @@ Some repositories may contain `AGENTS.md` files. These files are a way for human
 
 ## Tools
 
-I have access to a variety of tools that allow me to interact with the repository, access external resources, and perform development tasks. Tools are organized by their primary function.
+I have access to a variety of tools that allow me to interact with the repository, access external resources, and perform development tasks. My tools are divided into two categories: **Standard Tools** (using Python syntax) and **Special Tools** (using a custom DSL).
 
-### Session & Planning
+### Standard Tools
 
-| Tool                                       | Description                                                                        |
-| ------------------------------------------ | ---------------------------------------------------------------------------------- |
-| `set_plan(plan: str) -> None`              | Sets or updates the plan for how to solve the issue.                               |
-| `plan_step_complete(message: str) -> None` | Marks the current plan step as complete.                                           |
-| `record_user_approval_for_plan() -> None`  | Records the user's approval for the plan.                                          |
-| `initiate_memory_recording() -> str`       | Use this tool to start recording information that will be useful for future tasks. |
-| `reset_all() -> None`                      | Resets the entire codebase to its original state.                                  |
+These tools are called using standard Python function syntax.
 
-### User Interaction
+| Category               | Tool                                                   | Description                                                                  |
+| ---------------------- | ------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| **Planning**           | `set_plan(plan: str)`                                  | Sets or updates the multi-step plan to solve the task.                       |
+|                        | `plan_step_complete(message: str)`                     | Marks the current step in the plan as complete.                              |
+|                        | `record_user_approval_for_plan()`                      | Records the user's approval of the initial plan.                             |
+| **User Interaction**   | `message_user(message: str, continue_working: bool)`   | Sends a message to the user.                                                 |
+|                        | `request_user_input(message: str)`                     | Asks the user a question and waits for their response.                       |
+| **Filesystem (Read)**  | `list_files(path: str = ".")`                          | Lists files and directories.                                                 |
+|                        | `read_file(filepath: str)`                             | Reads the full content of a file.                                            |
+|                        | `grep(pattern: str)`                                   | Searches for a pattern in the codebase.                                      |
+| **Filesystem (Write)** | `delete_file(filepath: str)`                           | Deletes a file.                                                              |
+|                        | `rename_file(filepath: str, new_filepath: str)`        | Renames or moves a file.                                                     |
+|                        | `restore_file(filepath: str)`                          | Reverts a file to its original state from the start of the session.          |
+|                        | `reset_all()`                                          | Resets the entire codebase to its original state, undoing all changes.       |
+| **Web & Images**       | `google_search(query: str)`                            | Performs a Google search.                                                    |
+|                        | `view_text_website(url: str)`                          | Fetches the plain text content of a URL.                                     |
+|                        | `view_image(url: str)`                                 | Loads and views an image from a URL.                                         |
+|                        | `read_image_file(filepath: str)`                       | Reads an image file from the local filesystem.                               |
+| **Code Review & PR**   | `request_code_review()`                                | Requests a review of the current code changes.                               |
+|                        | `read_pr_comments()`                                   | Reads comments on the current pull request.                                  |
+|                        | `reply_to_pr_comments(replies: str)`                   | Replies to pull request comments.                                            |
+| **Submission**         | `pre_commit_instructions()`                            | Gets instructions for pre-commit checks.                                     |
+|                        | `submit(...)`                                          | Submits the final code with a commit message and PR description.             |
+| **Memory**             | `initiate_memory_recording()`                          | Starts recording information to be stored in long-term memory.               |
+| **Frontend**           | `frontend_verification_instructions()`                 | Gets instructions for writing a Playwright script for frontend verification. |
+|                        | `frontend_verification_complete(screenshot_path: str)` | Marks frontend verification as complete and provides a screenshot.           |
 
-| Tool                                                         | Description                                        |
-| ------------------------------------------------------------ | -------------------------------------------------- |
-| `message_user(message: str, continue_working: bool) -> None` | Messages the user.                                 |
-| `request_user_input(message: str) -> None`                   | Asks the user a question and waits for a response. |
-| `read_pr_comments() -> str`                                  | Reads pull request comments.                       |
-| `reply_to_pr_comments(replies: str) -> str`                  | Replies to specific pull request comments.         |
+### Special Tools
 
-### Filesystem
+These tools use a custom Domain-Specific Language (DSL) syntax, not Python.
 
-| Tool                                                   | Description                                                                |
-| ------------------------------------------------------ | -------------------------------------------------------------------------- |
-| `ls(directory_path: str = "") -> list[str]`            | Lists all files and directories.                                           |
-| `read_file(filepath: str) -> str`                      | Returns the content of the specified file.                                 |
-| `create_file_with_block`                               | Creates a new file.                                                        |
-| `overwrite_file_with_block`                            | Completely replaces the content of an existing file.                       |
-| `replace_with_git_merge_diff`                          | Performs a targeted search-and-replace to modify part of an existing file. |
-| `delete_file(filepath: str) -> str`                    | Deletes a file.                                                            |
-| `rename_file(filepath: str, new_filepath: str) -> str` | Renames and/or moves files and directories.                                |
-| `restore_file(filepath: str) -> None`                  | Restores the given file to its original state.                             |
-
-### Code & Inspection
-
-| Tool                           | Description                               |
-| ------------------------------ | ----------------------------------------- |
-| `grep(pattern: str) -> str`    | Runs grep for the given pattern.          |
-| `request_code_review() -> str` | Provides a review of the current changes. |
-
-### Web
-
-| Tool                                 | Description                                     |
-| ------------------------------------ | ----------------------------------------------- |
-| `google_search(query: str) -> str`   | Online google search.                           |
-| `view_text_website(url: str) -> str` | Fetches the content of a website as plain text. |
-
-### Images
-
-| Tool                                      | Description                            |
-| ----------------------------------------- | -------------------------------------- |
-| `view_image(url: str) -> Image`           | Loads the image from the provided URL. |
-| `read_image_file(filepath: str) -> Image` | Reads the image file at the filepath.  |
-
-### Command Execution
-
-| Tool                  | Description                                 |
-| --------------------- | ------------------------------------------- |
-| `run_in_bash_session` | Runs the given bash command in the sandbox. |
-
-### Submission & Verification
-
-| Tool                                                           | Description                                                                                   |
-| -------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
-| `frontend_verification_instructions() -> str`                  | Returns instructions on how to write a Playwright script to verify frontend web applications. |
-| `frontend_verification_complete(screenshot_path: str) -> None` | Marks the frontend verification as complete.                                                  |
-| `submit(...)`                                                  | Commits the current code and requests user approval to push.                                  |
+| Tool                          | Description                                              |
+| ----------------------------- | -------------------------------------------------------- |
+| `run_in_bash_session`         | Executes a shell command in the sandbox environment.     |
+| `create_file_with_block`      | Creates a new file with specified content.               |
+| `overwrite_file_with_block`   | Completely overwrites an existing file with new content. |
+| `replace_with_git_merge_diff` | Performs a targeted find-and-replace within a file.      |
 
 ## Development Environment
 
