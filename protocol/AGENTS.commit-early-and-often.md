@@ -42,6 +42,7 @@ All subsequent work, including fixing errors, refining the protocol, or addressi
 *   **Atomic Commits**: Each numbered item in the checklist is a single, logical change and will be its own commit.
 *   **Keep `task.md` Updated**: This `task.md` file must be updated and committed with every change. After completing a task, check it off (`[x]`).
 *   **Provisional Completion**: You are expected to mark tasks as complete. However, this status is provisional. The user is the final arbiter of completion.
+*   **Neutral Commit Language**: Do not use words that imply finality (e.g., "final", "done", "complete") in commit messages or PR descriptions. All work is provisional until approved by the user.
 
 ---
 
