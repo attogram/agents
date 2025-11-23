@@ -33,6 +33,16 @@ This document provides a generic, resilient workflow that can be implemented by 
 
 ---
 
+## Protocol: Session Resumption
+
+If you are a new agent instance resuming this task, your first actions are:
+1.  Verify the completion of the last checked-off item in the Task Checklist.
+2.  Add a new item to the checklist: `X.0: Resume session and verify state`.
+3.  Check off this new item.
+4.  "Commit" the updated `task.md`. This logs the handover. Then, proceed with the remaining tasks.
+
+---
+
 ## Protocol: Immutable Branch
 
 **The branch for this session is IMMUTABLE.** All work must be added as new "commits" to this branch.
