@@ -25,7 +25,7 @@ The primary objective of this session is to follow the "Commit Early and Often" 
 
 ## Working Branch & PR
 
-*   **Branch**: `(the branch name for this session)`
+*   **Branch**: Use a short, descriptive, non-versioned name (e.g., `feat/add-login-button`, not `feat/jules-branch-v2`).
 *   **PR**: `(the URL of the pull request for this session)`
 
 ## Task Checklist
