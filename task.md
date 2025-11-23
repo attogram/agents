@@ -1,13 +1,39 @@
 # Task: Develop and Document the "Commit Early and Often" Protocol
 
-## Session Objective
+## Session State
 
-The primary objective of this session is to follow the "Commit Early and Often" protocol to ensure all work is resilient and recoverable. All work will be performed on a single branch and PR, with `task.md` serving as the single source of truth.
+*   **Branch**: `feat/commit-early-protocol-v2` (Note: This name is non-compliant and serves as a lesson for the protocol.)
+*   **PR**: `(I will add the PR URL here after the next submission)`
 
-## Working Branch & PR
+---
 
-*   **Branch**: `feat/commit-early-protocol-v2`
-*   **PR**: `(I will add the PR URL here once it is created)`
+## Protocol: Immutable Branch
+
+**The branch created for this session is IMMUTABLE and PERSISTENT.**
+
+*   **DO NOT CHANGE THE BRANCH.**
+*   **DO NOT CREATE NEW BRANCHES.**
+
+All subsequent work, including fixing errors, refining the protocol, or addressing user feedback, **must** be added as new commits to this single, original branch. Abandoning the branch is a critical protocol failure.
+
+---
+
+## Protocol: Core Workflow
+
+*   **Task Checklist**: All work must be broken down into a numbered checklist (e.g., `1.1`, `1.1.1`) to allow for precise referencing. This is the primary work log.
+*   **Atomic Commits**: Each numbered item in the checklist is a single, logical change and will be its own commit.
+*   **Keep `task.md` Updated**: This `task.md` file must be updated and committed with every change. After completing a task, check it off (`[x]`).
+*   **Provisional Completion**: You are expected to mark tasks as complete. However, this status is provisional. The user is the final arbiter of completion.
+
+---
+
+## Protocol: Git Workflow
+
+*   **Commit via `submit`**: The only way to create commits is with the `submit` tool.
+*   **Adding Commits**: To add a subsequent commit to the existing pull request, you **must** use the `submit` tool with the **exact same branch name** used for the initial submission.
+*   **`run_in_bash_session` Warning**: The `run_in_bash_session` tool does not maintain a persistent git session. Do not use `git checkout` or `git commit` directly.
+
+---
 
 ## Task Checklist
 
@@ -18,17 +44,8 @@ The primary objective of this session is to follow the "Commit Early and Often" 
 - [x] `1.4`: Clarify the "Provisional Completion" rule.
 - [x] `1.5`: Add a mandatory numbered format for the task checklist.
 - [x] `1.6`: Explicitly forbid creating new branches or modifying the branch name.
-- [ ] `2.0`: Create a `task.md` for the current session that accurately reflects the work done.
-- [ ] `2.1`: Submit the session `task.md` to the existing PR.
-
-## Core Workflow
-
-*   **One PR per Session**: All work for this objective is on the PR listed above.
-*   **Atomic Commits**: Each item in the checklist is a single, logical change and will be its own commit.
-*   **Commit via `submit`**: The only way to create commits is with the `submit` tool. To add a subsequent commit to the existing pull request, you **must** use the `submit` tool with the **exact same branch name** used for the initial submission. Do not create a new branch. Do not modify the branch name in any way (e.g., by adding `-v2`).
-*   **Keep `task.md` Updated**: This `task.md` file must be updated and committed with every change. After completing a task, check it off, and add the update to your next commit.
-*   **Provisional Completion**: You are expected to mark tasks as complete (`[x]`) in the checklist as you finish them. However, this status is provisional. The user is the final arbiter of completion and may countermand your assessment.
-
-## Git Workflow
-
-The `run_in_bash_session` tool does not maintain a persistent git session. Do not use `git checkout` or `git commit` directly. Use the `submit` tool for all commits.
+- [x] `1.7`: Fortify the protocol with the "Immutable Branch Principle".
+- [x] `1.8`: Consolidate the entire protocol into the `task.md` template, making the AGENTS file a pure bootstrap installer.
+- [x] `1.9`: Add a specific anti-pattern warning for branch naming, using the current branch as a lesson.
+- [ ] `2.0`: Create this comprehensive `task.md` file, documenting all protocol refinements.
+- [ ] `2.1`: Submit the final protocol and this `task.md` together in a single, compliant commit.
