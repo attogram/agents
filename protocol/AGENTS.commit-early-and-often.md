@@ -41,7 +41,7 @@ Use a numbered format for tasks (e.g., `1.1`, `1.1.1`) to allow for precise refe
 
 *   **One PR per Session**: All work for this objective is on the PR listed above.
 *   **Atomic Commits**: Each item in the checklist is a single, logical change and will be its own commit.
-*   **Commit via `submit`**: The only way to create commits is with the `submit` tool. Use it multiple times with the same branch name to add commits to the PR.
+*   **Commit via `submit`**: The only way to create commits is with the `submit` tool. To add a subsequent commit to the existing pull request, you **must** use the `submit` tool with the **exact same branch name** used for the initial submission. Do not create a new branch. Do not modify the branch name in any way (e.g., by adding `-v2`).
 *   **Keep `task.md` Updated**: This `task.md` file must be updated and committed with every change. After completing a task, check it off, and add the update to your next commit.
 *   **Provisional Completion**: You are expected to mark tasks as complete (`[x]`) in the checklist as you finish them. However, this status is provisional. The user is the final arbiter of completion and may countermand your assessment.
 
