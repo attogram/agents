@@ -20,7 +20,7 @@ This document's sole purpose is to bootstrap a resilient working session for an 
 
 ## Session State
 
-*   **Branch**: Use a short, descriptive, non-versioned name. **Anti-Pattern**: Do not use version numbers like `-v2` (e.g., `feat/commit-early-protocol-v2`). **Good Example**: `feat/establish-commit-protocol`.
+*   **Branch**: Use a short, descriptive, non-versioned name. **Anti-Pattern**: `my-branch-v2`, `jules-branch-final`. **Good Example**: `feat/add-login-button`, `docs/clarify-protocol`.
 *   **PR**: `(Fill in with the URL of the pull request for this session)`
 
 ---
