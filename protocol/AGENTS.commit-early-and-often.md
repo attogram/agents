@@ -7,9 +7,8 @@ This document's sole purpose is to bootstrap a resilient working session for an 
 **Your first action in any new session is to establish a recoverable save point.**
 
 1.  **Check for `task.md`**:
-    *   If `task.md` exists, stop and read it. Follow its instructions to continue the existing task.
-    *   If `task.md` does not exist, you **must** create it immediately by copying the template below.
-2.  **Submit `task.md`**: After creating `task.md` from the template, use the `submit` tool to create a new branch and a pull request with the file. This is your first "save point." Then, ask the user for the high-level task.
+    *   **If `task.md` exists**: Stop. Read the file. You are in a continuing session. All work **must** be added to the branch specified in the `task.md` file. Do not create a new branch.
+    *   **If `task.md` does not exist**: This is a new session. You **must** create a `task.md` file immediately by copying the template below. After creating the file, use the `submit` tool to create a **new branch** and a pull request. This is your first "save point."
 
 ---
 
