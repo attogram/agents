@@ -4,11 +4,20 @@ This document's sole purpose is to bootstrap a resilient working session for an 
 
 ## Bootstrap Protocol
 
-**Your first action in any new session is to establish a recoverable save point.**
+**Your first action in any new session is to determine your location and sync your state.**
 
-1.  **Check for `task.md`**:
-    *   **If `task.md` exists**: Stop. Read the file. You are in a continuing session. All work **must** be added to the branch specified in the `task.md` file. Do not create a new branch.
-    *   **If `task.md` does not exist**: This is a new session. You **must** create a `task.md` file immediately by copying the template below. After creating the file, use the `submit` tool to create a **new branch** and a pull request. This is your first "save point."
+1.  **Determine Current Branch**: Identify the branch you are currently on.
+
+2.  **Handle `main` Branch Exception**:
+    *   If the Current Branch is `main` (or `master`), this is a **New Session**. Any `task.md` on this branch must be ignored. Your first action is to create a new, compliant branch, then proceed to Step 3.
+
+3.  **Handle Feature Branches**:
+    *   **Check for `task.md`**:
+        *   **If `task.md` does not exist**: This is a **New Session**. Create `task.md` from the template below, setting the `Current Branch` field to your actual current branch. Your next action is to submit this new file.
+        *   **If `task.md` exists**: This is a **Continuing Session**.
+            *   **Sanity Check**: Compare the `Current Branch` value in `task.md` with your actual current branch.
+            *   **If they match**: The session is healthy. Proceed with the task list.
+            *   **If they do NOT match**: The `task.md` is out of sync. Your first action is to update the `Current Branch` field in `task.md` to your actual current branch and commit this correction. Then, proceed with the task list.
 
 ---
 
@@ -19,38 +28,32 @@ This document's sole purpose is to bootstrap a resilient working session for an 
 
 ## Session State
 
-*   **Current Branch**: The branch this `task.md` file is on. Per the Immutable Branch protocol, all work must be added to this branch.
-*   **Target Branch**: The ideal, protocol-compliant branch name for this session. If this differs from the Current Branch, it serves as a record of a session starting non-compliantly.
+*   **Current Branch**: The branch this `task.md` file is on. This is the ground truth for the session.
+*   **Target Branch**: The ideal, protocol-compliant branch name for this session.
 *   **PR**: `(Fill in with the URL of the pull request for this session)`
 
 ---
 
 ## Protocol: Immutable Branch
 
-**The branch created for this session is IMMUTABLE and PERSISTENT.**
-
-*   **DO NOT CHANGE THE BRANCH.**
-*   **DO NOT CREATE NEW BRANCHES.**
-
-All subsequent work, including fixing errors, refining the protocol, or addressing user feedback, **must** be added as new commits to this single, original branch. Abandoning the branch is a critical protocol failure.
+**The branch for this session is IMMUTABLE and PERSISTENT.** After the bootstrap process, all work must be added to the Current Branch.
 
 ---
 
 ## Protocol: Core Workflow
 
-*   **Task Checklist**: All work must be broken down into a numbered checklist (e.g., `1.1`, `1.1.1`) to allow for precise referencing. This is the primary work log.
-*   **Atomic Commits**: Each numbered item in the checklist is a single, logical change and will be its own commit.
-*   **Keep `task.md` Updated**: This `task.md` file must be updated and committed with every change. After completing a task, check it off (`[x]`).
-*   **Provisional Completion**: You are expected to mark tasks as complete. However, this status is provisional. The user is the final arbiter of completion.
-*   **Neutral Commit Language**: Do not use words that imply finality (e.g., "final", "done", "complete") in commit messages or PR descriptions. All work is provisional until approved by the user.
+*   **Task Checklist**: All work must be broken down into a numbered checklist.
+*   **Atomic Commits**: Each numbered item is a single, logical change.
+*   **Keep `task.md` Updated**: This file must be updated and committed with every change.
+*   **Provisional Completion**: You may check off tasks, but the user is the final arbiter of completion.
+*   **Neutral Commit Language**: Avoid words that imply finality (e.g., "final") in commit messages.
 
 ---
 
 ## Protocol: Git Workflow
 
-*   **Commit via `submit`**: The only way to create commits is with the `submit` tool.
-*   **Adding Commits**: To add a subsequent commit to the existing pull request, you **must** use the `submit` tool with the **exact same branch name** used for the initial submission.
-*   **`run_in_bash_session` Warning**: The `run_in_bash_session` tool does not maintain a persistent git session. Do not use `git checkout` or `git commit` directly.
+*   **Commit via `submit`**: Use the `submit` tool for all commits.
+*   **Adding Commits**: Use the **exact same branch name** for all submissions to add commits to the existing PR.
 
 ---
 
