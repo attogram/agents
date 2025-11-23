@@ -40,6 +40,7 @@ The primary objective of this session is to follow the "Commit Early and Often" 
 *   **Atomic Commits**: Each item in the checklist is a single, logical change and will be its own commit.
 *   **Commit via `submit`**: The only way to create commits is with the `submit` tool. Use it multiple times with the same branch name to add commits to the PR.
 *   **Keep `task.md` Updated**: This `task.md` file must be updated and committed with every change. After completing a task, check it off, and add the update to your next commit.
+*   **Provisional Completion**: You are expected to mark tasks as complete (`[x]`) in the checklist as you finish them. However, this status is provisional. The user is the final arbiter of completion and may countermand your assessment.
 
 ## Git Workflow
 
