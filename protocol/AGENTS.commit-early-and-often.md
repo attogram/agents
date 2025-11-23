@@ -12,6 +12,15 @@ This document is a starter prompt for AI assistants.
 2.  **Create `task.md` from Template**: Copy the entire template below into a new file named `task.md`.
 3.  **Submit `task.md`**: Use the `submit` tool to create a new branch and a pull request with this `task.md` file. This is your first "save point."
 
+## The Immutable Branch Principle
+
+**The branch created during the bootstrap process is IMMUTABLE and PERSISTENT for the entire session.**
+
+*   **DO NOT CHANGE THE BRANCH.**
+*   **DO NOT CREATE NEW BRANCHES.**
+
+All subsequent work, including fixing errors, refining the protocol, or addressing user feedback, **must** be added as new commits to this single, original branch. Abandoning the branch or creating a new one is a critical protocol failure. This is the foundational rule for session resilience.
+
 ---
 
 ## `task.md` Template
