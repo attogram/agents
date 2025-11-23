@@ -1,6 +1,24 @@
 # Protocol: Commit Early and Often
 
-This document outlines the "Commit Early and Often" workflow for AI assistants. The primary goal is to maintain a high level of transparency and momentum, ensuring that work is consistently integrated and never lost.
+This document outlines the "Commit Early and Often" workflow for AI assistants. It is designed to be used as a starter prompt for a new session, providing the agent with a self-contained set of instructions for resilient, iterative work.
+
+## Bootstrap Protocol: Your First Action
+
+As an AI assistant, your first action in any new session is to establish a safe, recoverable "save point."
+
+1.  **Check for `task.md`**: Look for a file named `task.md` in the root of the repository.
+2.  **If `task.md` Exists**: Read the file and continue the work from the last completed step.
+3.  **If `task.md` Does Not Exist**: You must immediately create it.
+    *   Create a placeholder `task.md` file. A good placeholder is:
+        ```markdown
+        # Task List
+
+        - [ ] This task list is a placeholder. The user has not yet specified the tasks.
+        ```
+    *   Immediately use the `submit` tool to create a new branch and a pull request with this file. This is your first "save point."
+    *   Once the PR is created, you may ask the user for the specific tasks to be completed.
+
+This bootstrap protocol ensures that a recoverable PR is always the first thing created in a session.
 
 ## Core Principles
 
