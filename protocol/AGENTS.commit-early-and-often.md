@@ -30,9 +30,12 @@ The primary objective of this session is to follow the "Commit Early and Often" 
 
 ## Task Checklist
 
-- [ ] (Task 1: Describe the first atomic change)
-- [ ] (Task 2: Describe the second atomic change)
-- [ ] (Task 3: etc...)
+Use a numbered format for tasks (e.g., `1.1`, `1.1.1`) to allow for precise referencing of atomic work items.
+
+- [ ] `1.0`: (Describe the first high-level task)
+- [ ] `1.1`: (Describe the first sub-task)
+- [ ] `1.2`: (Describe the second sub-task)
+- [ ] `2.0`: (Describe the second high-level task)
 
 ## Core Workflow
 
