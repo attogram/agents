@@ -35,12 +35,13 @@ This document provides a generic, resilient workflow that can be implemented by 
 
 ## Protocol: Session Resumption
 
-If you are a new agent instance resuming this task, your first actions are:
+If you are a new agent instance resuming this task, you must not proceed with the task list. Your first actions are to audit the state of the branch and report to the user:
 
-1.  Verify the completion of the last checked-off item in the Task Checklist.
-2.  Add a new item to the checklist: `X.0: Resume session and verify state`.
-3.  Check off this new item.
-4.  "Commit" the updated `task.md`. This logs the handover. Then, proceed with the remaining tasks.
+1.  **Audit the Checklist**: For every item in the Task Checklist, you must use `read_file`, `ls`, and other tools to verify whether the work described has actually been completed.
+2.  **Summarize for User**: Create a summary of your findings for the user. For example:
+    *   "I have audited the `task.md`. I can confirm that tasks 1.1 and 1.2 are complete. Task 1.3 is marked as complete, but I have found that the file it was supposed to create is missing. Task 2.0 is not yet started."
+3.  **Request Instructions**: After providing the summary, you must explicitly ask the user for instructions on how to proceed and then wait for a response. For example:
+    *   "How should I proceed? Should I re-do task 1.3, or should I proceed to task 2.0?"
 
 ---
 
