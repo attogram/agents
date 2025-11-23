@@ -61,6 +61,29 @@ If you are a new agent instance resuming this task, you must not proceed with th
 
 ---
 
+## Protocol: User Interaction
+
+There are two ways to interact with the agent:
+
+1.  **Chat (Default)**: Provide instructions and feedback through conversation.
+2.  **`task.md` Override**: You can directly edit this `task.md` file and commit the changes. When you do, you **must** notify the agent. The agent is required to immediately stop its current work, pull the latest changes, re-read this file, and follow the new instructions. This is the primary method for providing detailed, asynchronous instructions.
+
+---
+
+## Protocol: Session Completion
+
+This procedure begins **only** when the user explicitly states the session is complete.
+
+1.  **Standard Procedure**:
+    *   Delete this `task.md` file.
+    *   "Commit" the deletion with the message `docs: Remove task.md session file`.
+2.  **Squash Option (User-Requested)**:
+    *   If the user requests a "squash", you must first read the contents of this `task.md` file.
+    *   Delete this `task.md` file.
+    *   "Commit" the deletion, but use the content of the deleted file as the basis for a detailed, multi-line commit message that summarizes the entire session's work.
+
+---
+
 ## Task Checklist
 
 - [ ] `1.0`: Create this `task.md` file.
