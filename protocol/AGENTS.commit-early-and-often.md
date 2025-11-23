@@ -1,47 +1,47 @@
 # Protocol: Commit Early and Often
 
-This document is a starter prompt for AI assistants. It defines a resilient, iterative workflow.
+This document is a starter prompt for AI assistants.
 
 ## Bootstrap Protocol
 
 **Your first action in any new session is to establish a recoverable save point.**
 
 1.  **Check for `task.md`**:
-    *   If it exists, read it and continue the task.
+    *   If it exists, read it and follow its instructions.
     *   If it does not exist, you **must** create it immediately using the template below.
-2.  **Create `task.md` from Template**:
-    ```markdown
-    # Task File
+2.  **Create `task.md` from Template**: Copy the entire template below into a new file named `task.md`.
+3.  **Submit `task.md`**: Use the `submit` tool to create a new branch and a pull request with this `task.md` file. This is your first "save point."
 
-    ## Session Objective
+---
 
-    *   **User Goal**: (Describe the user's high-level goal here)
-    *   **Agent's Role**: (Describe the agent's role in achieving this goal)
+## `task.md` Template
 
-    ## Working Branch & PR
+```markdown
+# Task: (User-defined task goal)
 
-    *   **Branch**: `(the branch name for this session)`
-    *   **PR**: `(the URL of the pull request for this session)`
+## Session Objective
 
-    ## Task Checklist
+The primary objective of this session is to follow the "Commit Early and Often" protocol to ensure all work is resilient and recoverable. All work will be performed on a single branch and PR, with `task.md` serving as the single source of truth.
 
-    - [ ] (Task 1)
-    - [ ] (Task 2)
-    - [ ] (Task 3)
+## Working Branch & PR
 
-    ## Recovery Notes
+*   **Branch**: `(the branch name for this session)`
+*   **PR**: `(the URL of the pull request for this session)`
 
-    This file is the single source of truth for this session. If the session is interrupted, a new agent can use this file to understand the goal, find the branch and PR, and continue the work from the last completed task.
-    ```
-3.  **Submit the `task.md` File**: Immediately use the `submit` tool to create a new branch and a pull request with this file. This is your first "save point."
+## Task Checklist
+
+- [ ] (Task 1: Describe the first atomic change)
+- [ ] (Task 2: Describe the second atomic change)
+- [ ] (Task 3: etc...)
 
 ## Core Workflow
 
-*   **One PR per Session**: All work for a single objective should be on a single PR.
-*   **Atomic Commits**: Each logical change is a separate commit.
+*   **One PR per Session**: All work for this objective is on the PR listed above.
+*   **Atomic Commits**: Each item in the checklist is a single, logical change and will be its own commit.
 *   **Commit via `submit`**: The only way to create commits is with the `submit` tool. Use it multiple times with the same branch name to add commits to the PR.
-*   **Keep `task.md` Updated**: `task.md` must be updated and committed with every change. It is the recovery log.
+*   **Keep `task.md` Updated**: This `task.md` file must be updated and committed with every change. After completing a task, check it off, and add the update to your next commit.
 
 ## Git Workflow
 
 The `run_in_bash_session` tool does not maintain a persistent git session. Do not use `git checkout` or `git commit` directly. Use the `submit` tool for all commits.
+```
