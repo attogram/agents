@@ -19,7 +19,8 @@ This document's sole purpose is to bootstrap a resilient working session for an 
 
 ## Session State
 
-*   **Branch**: Use a short, descriptive, non-versioned name. **Anti-Pattern**: `my-branch-v2`, `jules-branch-final`. **Good Example**: `feat/add-login-button`, `docs/clarify-protocol`.
+*   **Current Branch**: The branch this `task.md` file is on. Per the Immutable Branch protocol, all work must be added to this branch.
+*   **Target Branch**: The ideal, protocol-compliant branch name for this session. If this differs from the Current Branch, it serves as a record of a session starting non-compliantly.
 *   **PR**: `(Fill in with the URL of the pull request for this session)`
 
 ---
